@@ -53,16 +53,7 @@ class PsychCredits extends ScriptedMusicBeatState
         [" ", "edwin", " ", "https://youtu.be/7mUj7m66veI?si=YeohNvmI7sZ0LyiP"]
     ];
     override function create()
-    {
-        FunkinSound.playMusic('freeplayRandom',
-        {
-            startingVolume: 0.0,
-            overrideExisting: true,
-            restartTrack: true,
-            loop: true
-        });
-        FlxG.sound.music.fadeIn(1, 0, 0.8);       
-
+    {    
         bg = FunkinSprite.create(0,0, 'menuBG');
         bg.scrollFactor.set(); 
         bg.setGraphicSize(Std.int(bg.width * 1.2));
