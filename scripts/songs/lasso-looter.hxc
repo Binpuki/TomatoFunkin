@@ -1,0 +1,20 @@
+
+
+import funkin.play.song.Song;
+import funkin.save.Save;
+class BounsSong extends Song
+{
+    public function new()
+    {
+        super('lasso-looter');
+    }
+
+    public function listDifficulties(variationId:String, variationIds:Array<String>, showLocked:Bool):Array<String> {
+		if (showLocked || Save.instance.hasBeatenLevel('jkterjter')) {
+			return super.listDifficulties(variationId, variationIds);
+		}
+
+		// Hide all difficulties if the player has not beaten the week.
+		return [];
+	}
+}
