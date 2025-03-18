@@ -1,0 +1,16 @@
+{
+    "//note": "this sticker pack should override the vanilla sticker pack.",
+
+    "name": "stickers-set-1",
+    "artist": "johferson09",
+    "stickers": {
+      "doki": ["dokiSticker1", "dokiSticker2", "dokiSticker1-Shiny", "dokiSticker2-Shiny", "dokiSticker3", "dokiSticker4"],
+      "dragoon": ["dragoonSticker1", "dragoonSticker2","dragoonSticker1-Shiny", "dragoonSticker2-Shiny"]
+
+    },
+    "stickerPacks": {
+      "placeholder": ["this line has no function yet"],
+      "all": ["doki", "dragoon"]
+    }
+  }
+  

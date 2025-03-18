@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="crowd-fg-2.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="dragoonersfg20000" x="0" y="3027" width="2861" height="953" frameX="0" frameY="-74" frameWidth="2861" frameHeight="1027"/>
+	<SubTexture name="dragoonersfg20001" x="0" y="3027" width="2861" height="953" frameX="0" frameY="-74" frameWidth="2861" frameHeight="1027"/>
+	<SubTexture name="dragoonersfg20002" x="0" y="2037" width="2823" height="985" frameX="-19" frameY="-42" frameWidth="2861" frameHeight="1027"/>
+	<SubTexture name="dragoonersfg20003" x="0" y="2037" width="2823" height="985" frameX="-19" frameY="-42" frameWidth="2861" frameHeight="1027"/>
+	<SubTexture name="dragoonersfg20004" x="0" y="1032" width="2783" height="1000" frameX="-39" frameY="-27" frameWidth="2861" frameHeight="1027"/>
+	<SubTexture name="dragoonersfg20005" x="0" y="1032" width="2783" height="1000" frameX="-39" frameY="-27" frameWidth="2861" frameHeight="1027"/>
+	<SubTexture name="dragoonersfg20006" x="0" y="0" width="2761" height="1027" frameX="-50" frameY="0" frameWidth="2861" frameHeight="1027"/>
+	<SubTexture name="dragoonersfg20007" x="0" y="0" width="2761" height="1027" frameX="-50" frameY="0" frameWidth="2861" frameHeight="1027"/>
+	<SubTexture name="dragoonersfg20008" x="0" y="0" width="2761" height="1027" frameX="-50" frameY="0" frameWidth="2861" frameHeight="1027"/>
+	<SubTexture name="dragoonersfg20009" x="0" y="0" width="2761" height="1027" frameX="-50" frameY="0" frameWidth="2861" frameHeight="1027"/>
+</TextureAtlas>

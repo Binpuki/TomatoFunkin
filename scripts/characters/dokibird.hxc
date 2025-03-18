@@ -1,0 +1,20 @@
+import funkin.play.character.MultiSparrowCharacter;
+import funkin.play.character.CharacterType;
+
+class DokibirdCharacter extends MultiSparrowCharacter {
+	function new() {
+		super('dokibird');
+    }
+
+    function onNoteHit(event:HitNoteScriptEvent)
+    {
+        super.onNoteHit(event);
+        
+        if (!event.note.noteData.getMustHitNote() && event.note.kind == "engineLaugh" && characterType == CharacterType.DAD) 
+        {
+            holdTimer = 0;
+            playAnimation('engineLaugh', true, true);
+            return;
+        }
+    }
+}

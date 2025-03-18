@@ -1,0 +1,58 @@
+{
+  "version": "1.0.0",
+  "name": "Simply Dokibird (PLACEHOLDER)",
+  "author": "johfy",
+  "fallback": "funkin",
+  "assets": {
+    "note": {
+      "assetPath": "simply-doki-notes",
+      "scale": 1.0,
+      "data": {
+        "left": { "prefix": "noteLeft" },
+        "down": { "prefix": "noteDown" },
+        "up": { "prefix": "noteUp" },
+        "right": { "prefix": "noteRight" }
+      }
+    },
+    "noteStrumline": {
+      "assetPath": "simply-doki-strumline",
+      "scale": 1.55,
+      "offsets": [0, 0],
+      "data": {
+        "leftStatic": { "prefix": "staticLeft0" },
+        "leftPress": { "prefix": "pressLeft0" },
+        "leftConfirm": { "prefix": "confirmLeft0" },
+        "leftConfirmHold": { "prefix": "confirmLeft0" },
+        "downStatic": { "prefix": "staticDown0" },
+        "downPress": { "prefix": "pressDown0" },
+        "downConfirm": { "prefix": "confirmDown0" },
+        "downConfirmHold": { "prefix": "confirmDown0" },
+        "upStatic": { "prefix": "staticUp0" },
+        "upPress": { "prefix": "pressUp0" },
+        "upConfirm": { "prefix": "confirmUp0" },
+        "upConfirmHold": { "prefix": "confirmUp0" },
+        "rightStatic": { "prefix": "staticRight0" },
+        "rightPress": { "prefix": "pressRight0" },
+        "rightConfirm": { "prefix": "confirmRight0" },
+        "rightConfirmHold": { "prefix": "confirmRight0" }
+      }
+    },
+    "holdNote": {
+      "assetPath": "simply-doki-holds",
+      "scale": 1.63,
+      "data": {}
+    },
+    "noteSplash": {
+      "assetPath": "simply-doki-splashes",
+      "data": {
+        "enabled": true
+      }
+    },
+    "holdNoteCover": {
+      "assetPath": "simply-doki-suscovers",
+      "data": {
+        "enabled": true
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+	"version": "1.0.0",
+	"name": "Boyfriend (Yeehaw)",
+	"renderType": "animateatlas",
+	"assetPath": "shared:characters/bf-yeehaw",
+	"flipX": true,
+	"singTime": 8.0,
+	"offsets": [-1150, -380],
+	"scale": 0.9,
+	"cameraOffsets": [530, 247],
+	"healthIcon": {
+		"id": "bf-johfy-reskin"
+	},
+	"animations": [
+		{
+			"name": "idle",
+			"prefix": "idle",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singLEFT",
+			"prefix": "singLEFT",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singUP",
+			"prefix": "singUP",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singDOWN",
+			"prefix": "singDOWN",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singRIGHT",
+			"prefix": "singRIGHT",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singLEFTmiss",
+			"prefix": "singLEFTmiss",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singUPmiss",
+			"prefix": "singUPmiss",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singDOWNmiss",
+			"prefix": "singDOWNmiss",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singRIGHTmiss",
+			"prefix": "singRIGHTmiss",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "firstDeath",
+			"prefix": "death0",
+			"assetPath": "characters/bf-johfy-reskin",
+			"offsets": [68, 76]
+		  },
+		  {
+			"name": "deathLoop",
+			"prefix": "death-loop",
+			"assetPath": "characters/bf-johfy-reskin",
+			"looped": true,
+			"offsets": [-14, 33]
+		  },
+		  {
+			"name": "deathConfirm",
+			"prefix": "death-retried",
+			"assetPath": "characters/bf-johfy-reskin",
+			"offsets": [-14, 33]
+		  }
+	]  	 
+}

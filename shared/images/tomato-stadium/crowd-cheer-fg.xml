@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="crowd-cheer-fg.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="crowd-cheer-fg0000" x="0" y="0" width="4315" height="900" frameX="0" frameY="-152" frameWidth="4315" frameHeight="1054"/>
+	<SubTexture name="crowd-cheer-fg0001" x="0" y="0" width="4315" height="900" frameX="0" frameY="-152" frameWidth="4315" frameHeight="1054"/>
+	<SubTexture name="crowd-cheer-fg0002" x="0" y="900" width="4268" height="945" frameX="-16" frameY="-109" frameWidth="4315" frameHeight="1054"/>
+	<SubTexture name="crowd-cheer-fg0003" x="0" y="900" width="4268" height="945" frameX="-16" frameY="-109" frameWidth="4315" frameHeight="1054"/>
+	<SubTexture name="crowd-cheer-fg0004" x="0" y="1845" width="4202" height="1036" frameX="-38" frameY="-18" frameWidth="4315" frameHeight="1054"/>
+	<SubTexture name="crowd-cheer-fg0005" x="0" y="1845" width="4202" height="1036" frameX="-38" frameY="-18" frameWidth="4315" frameHeight="1054"/>
+	<SubTexture name="crowd-cheer-fg0006" x="0" y="2881" width="4187" height="1054" frameX="-47" frameY="0" frameWidth="4315" frameHeight="1054"/>
+	<SubTexture name="crowd-cheer-fg0007" x="0" y="2881" width="4187" height="1054" frameX="-47" frameY="0" frameWidth="4315" frameHeight="1054"/>
+	<SubTexture name="crowd-cheer-fg0008" x="0" y="2881" width="4187" height="1054" frameX="-47" frameY="0" frameWidth="4315" frameHeight="1054"/>
+	<SubTexture name="crowd-cheer-fg0009" x="0" y="2881" width="4187" height="1054" frameX="-47" frameY="0" frameWidth="4315" frameHeight="1054"/>
+</TextureAtlas>

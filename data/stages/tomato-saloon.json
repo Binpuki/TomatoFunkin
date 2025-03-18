@@ -1,0 +1,32 @@
+{
+    "version": "1.0.0",
+    "name": "Tomato Saloon",
+    "cameraZoom": 0.8,
+    "props": [
+        {
+            "zIndex": 0,
+            "position": [-700, -100],
+            "name": "bg",
+            "assetPath": "tomato-saloon/saloon-inside",
+            "scroll": [0.85, 0.85],
+            "scale": 1.2
+        }
+    ],
+    "characters": {
+        "bf": {
+            "zIndex": 300,
+            "position": [1150, 865],
+            "cameraOffsets": [0, 0]
+        },
+        "dad": {
+            "zIndex": 200,
+            "position": [5,865],
+            "cameraOffsets": [0, 0]
+        },
+        "gf": { 
+            "zIndex": 100,
+            "cameraOffsets": [0, 0],
+            "position": [650, 865]
+        }
+    }
+}

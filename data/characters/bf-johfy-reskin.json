@@ -1,0 +1,87 @@
+{
+  "version": "1.0.0",
+  "name": "Boyfriend-Johfy",
+  "renderType": "multisparrow",
+  "assetPath": "characters/bf-johfy-reskin",
+  "flipX": true,
+  "singTime": 8.0,
+  "animations": [
+    {
+      "name": "idle",
+      "prefix": "bf-idle",
+      "offsets": [-6, 0]
+    },
+    {
+      "name": "singLEFT",
+      "prefix": "bf-left",
+      "offsets": [-6, -4]
+    },
+    {
+      "name": "singDOWN",
+      "prefix": "bf-down",
+      "offsets": [20, -37]
+    },
+    {
+      "name": "singUP",
+      "prefix": "bf-up",
+      "offsets": [-46, 44]
+    },
+    {
+      "name": "singRIGHT",
+      "prefix": "bf-right",
+      "offsets": [-48, 2]
+    },
+    {
+      "name": "singLEFTmiss",
+      "prefix": "miss-left",
+      "offsets": [-6, -1]
+    },
+    {
+      "name": "singDOWNmiss",
+      "prefix": "miss-down",
+      "offsets": [19, -27]
+    },
+    {
+      "name": "singUPmiss",
+      "prefix": "miss-up",
+      "offsets": [-42, 43]
+    },
+    {
+      "name": "singRIGHTmiss",
+      "prefix": "miss-right",
+      "offsets": [-40, -1]
+    },
+    {
+      "name": "hey",
+      "prefix": "bf-hey",
+      "offsets": [5, -32]
+    },
+    {
+      "name": "cheer",
+      "prefix": "Cheer",
+      "assetPath": "characters/BFCheer",
+      "offsets": [0, 0]
+    },
+    {
+      "name": "firstDeath",
+      "prefix": "death0",
+      "offsets": [68, 76]
+    },
+    {
+      "name": "fakeoutDeath",
+      "prefix": "BF dies",
+      "offsets": [-37, 11]
+    },
+    {
+      "name": "deathLoop",
+      "prefix": "death-loop",
+      "looped": true,
+      "offsets": [-14, 33]
+    },
+    {
+      "name": "deathConfirm",
+      "prefix": "death-retried",
+      "offsets": [-14, 33]
+    }
+  ]
+}

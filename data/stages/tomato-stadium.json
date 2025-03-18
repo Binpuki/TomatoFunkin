@@ -1,0 +1,124 @@
+{
+  "version": "1.0.0",
+  "name": "Tomato Stadium",
+  "cameraZoom": 0.37,
+  "props": [
+    {
+      "zIndex": 10,
+      "position": [-2219, -186],
+      "scale": [1, 1],
+      "animType": "sparrow",
+      "name": "crowd",
+      "isPixel": false,
+      "assetPath": "tomato-stadium/crowd",
+      "scroll": [1, 1],
+      "animations": []
+    },
+    {
+      "zIndex": 20,
+      "position": [-587, 688],
+      "scale": [1, 1],
+      "animType": "sparrow",
+      "name": "stage",
+      "isPixel": false,
+      "assetPath": "tomato-stadium/stage",
+      "scroll": [1, 1],
+      "animations": []
+    },
+    {
+      "zIndex": -10,
+      "position": [-736, -837],
+      "scale": [1, 1],
+      "animType": "sparrow",
+      "name": "screen-outline",
+      "isPixel": false,
+      "assetPath": "tomato-stadium/screen-outline",
+      "scroll": [1, 1],
+      "animations": []
+    },
+    {
+      "zIndex": -20,
+      "position": [-736, -837],
+      "scale": [1, 1],
+      "animType": "sparrow",
+      "name": "screen-backlight",
+      "isPixel": false,
+      "assetPath": "tomato-stadium/screen-backlight",
+      "scroll": [1, 1],
+      "animations": []
+    },
+    {
+      "name": "bigscreen-vis",
+      "assetPath": "tomato-stadium/bigscreen-vis-placeholder",
+      "position": [-565.65, -655.54],
+      "scale": [1.5, 1.5],
+      "scroll": [1, 1],
+      "danceEvery": 1,
+      "zIndex": -15,
+      "startingAnimation": "idle",
+      "animations": [
+        {
+          "name": "idle",
+          "prefix": "bigscreen-vis",
+          "frameRate": 24,
+          "looped": false,
+          "flipX": false,
+          "flipY": false
+        }
+      ]
+    },
+    {
+      "name": "crowd-cheer-fg",
+      "assetPath": "tomato-stadium/crowd-cheer-fg",
+      "position": [-1675, 350],
+      "scale": [1.25, 1.25],
+      "scroll": [1.74, 1.9],
+      "danceEvery": 1,
+      "zIndex": 500,
+      "startingAnimation": "idle",
+      "animations": [
+        {
+          "name": "idle",
+          "prefix": "crowd-cheer-fg",
+          "frameRate": 24,
+          "looped": false,
+          "flipX": false,
+          "flipY": false
+        }
+      ]
+    },
+    {
+      "name": "crowd-fg-2",
+      "assetPath": "tomato-stadium/crowd-fg-2",
+      "position": [-1001, 340],
+      "scale": [1.3, 1.3],
+      "scroll": [1.2, 1.2],
+      "danceEvery": 1,
+      "zIndex": 400,
+      "startingAnimation": "idle",
+      "animations": [
+        {
+          "name": "idle",
+          "prefix": "dragoonersfg2",
+          "frameRate": 24,
+          "looped": false,
+          "flipX": false,
+          "flipY": false
+        }
+      ]
+    }
+  ],
+  "characters": {
+    "bf": {
+      "zIndex": 300,
+      "position": [1689, 882],
+      "cameraOffsets": [-600, -250]
+    },
+    "gf": { "zIndex": 100, "position": [830, 815], "cameraOffsets": [0, 0] },
+    "dad": {
+      "zIndex": 200,
+      "position": [51, 882],
+      "cameraOffsets": [400, -100]
+    }
+  }
+}

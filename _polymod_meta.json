@@ -1,0 +1,36 @@
+{
+  "title": "Tomato Funkin'",
+  "description": "jkterjter",
+  "contributors": [
+  {
+    "name": "johferson09"
+  },
+  {
+    "name": "EthanTheHedgehog"
+  },
+  {
+    "name": "Yolk"
+  },
+  {
+    "name": "DumbPNG"
+  },
+  {
+    "name": "kromiibytes"
+  },
+  {
+    "name": "afleefflox"
+  },
+  {
+    "name": "Melodii!~"
+  },
+  {
+    "name": "Mikolka"
+  },
+  {
+    "name": "Devi/js.los"
+  }
+],
+  "api_version": "0.5.0",
+  "mod_version": "1.0.0",
+  "license": "Apache-2.0"
+}

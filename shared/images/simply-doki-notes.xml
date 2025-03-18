@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="simply-doki-notes.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="noteDown0000" x="0" y="0" width="162" height="147" pivotX="1.25" pivotY="-2.05"/>
+	<SubTexture name="noteDown0001" x="0" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0002" x="167" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0003" x="167" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0004" x="334" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0005" x="334" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0006" x="501" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0007" x="501" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0008" x="668" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0009" x="668" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0010" x="668" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0011" x="668" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0012" x="668" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0013" x="835" y="0" width="162" height="147"/>
+	<SubTexture name="noteDown0014" x="835" y="0" width="162" height="147"/>
+	<SubTexture name="noteLeft0000" x="1002" y="0" width="147" height="161" pivotX="-5.9" pivotY="5.1"/>
+	<SubTexture name="noteLeft0001" x="1002" y="0" width="147" height="161"/>
+	<SubTexture name="noteLeft0002" x="1154" y="0" width="147" height="161"/>
+	<SubTexture name="noteLeft0003" x="1154" y="0" width="147" height="161"/>
+	<SubTexture name="noteLeft0004" x="1306" y="0" width="147" height="161"/>
+	<SubTexture name="noteLeft0005" x="1306" y="0" width="147" height="161"/>
+	<SubTexture name="noteLeft0006" x="0" y="166" width="147" height="161"/>
+	<SubTexture name="noteLeft0007" x="0" y="166" width="147" height="161"/>
+	<SubTexture name="noteLeft0008" x="152" y="166" width="147" height="161"/>
+	<SubTexture name="noteLeft0009" x="152" y="166" width="147" height="161"/>
+	<SubTexture name="noteLeft0010" x="152" y="166" width="147" height="161"/>
+	<SubTexture name="noteLeft0011" x="152" y="166" width="147" height="161"/>
+	<SubTexture name="noteLeft0012" x="152" y="166" width="147" height="161"/>
+	<SubTexture name="noteLeft0013" x="304" y="166" width="147" height="161"/>
+	<SubTexture name="noteLeft0014" x="304" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0000" x="456" y="166" width="147" height="161" pivotX="-2.25" pivotY="159"/>
+	<SubTexture name="noteRight0001" x="456" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0002" x="608" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0003" x="608" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0004" x="760" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0005" x="760" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0006" x="912" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0007" x="912" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0008" x="1064" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0009" x="1064" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0010" x="1064" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0011" x="1064" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0012" x="1064" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0013" x="1216" y="166" width="147" height="161"/>
+	<SubTexture name="noteRight0014" x="1216" y="166" width="147" height="161"/>
+	<SubTexture name="noteUp0000" x="0" y="332" width="162" height="147" pivotX="155.75" pivotY="-5.6"/>
+	<SubTexture name="noteUp0001" x="0" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0002" x="167" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0003" x="167" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0004" x="334" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0005" x="334" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0006" x="501" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0007" x="501" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0008" x="668" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0009" x="668" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0010" x="668" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0011" x="668" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0012" x="668" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0013" x="835" y="332" width="162" height="147"/>
+	<SubTexture name="noteUp0014" x="835" y="332" width="162" height="147"/>
+</TextureAtlas>

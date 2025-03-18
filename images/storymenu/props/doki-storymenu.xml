@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<TextureAtlas imagePath="doki-storymenu.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="maple-storymenu0000" x="0" y="0" width="487" height="756" frameX="0" frameY="-30" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0001" x="0" y="0" width="487" height="756" frameX="0" frameY="-30" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0002" x="487" y="0" width="479" height="761" frameX="-3" frameY="-25" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0003" x="487" y="0" width="479" height="761" frameX="-3" frameY="-25" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0004" x="922" y="761" width="462" height="773" frameX="-14" frameY="-13" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0005" x="922" y="761" width="462" height="773" frameX="-14" frameY="-13" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0006" x="461" y="761" width="461" height="784" frameX="-14" frameY="-2" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0007" x="461" y="761" width="461" height="784" frameX="-14" frameY="-2" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0008" x="0" y="756" width="461" height="786" frameX="-14" frameY="0" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0009" x="0" y="756" width="461" height="786" frameX="-14" frameY="0" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0010" x="0" y="756" width="461" height="786" frameX="-14" frameY="0" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0011" x="0" y="756" width="461" height="786" frameX="-14" frameY="0" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0012" x="0" y="756" width="461" height="786" frameX="-14" frameY="0" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0013" x="0" y="756" width="461" height="786" frameX="-14" frameY="0" frameWidth="487" frameHeight="786"/>
+	<SubTexture name="maple-storymenu0014" x="0" y="756" width="461" height="786" frameX="-14" frameY="0" frameWidth="487" frameHeight="786"/>
+</TextureAtlas>

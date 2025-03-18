@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "name": "Tomato Funkin' Demo OST",
+  "artists": ["EthanTheHedgehog", "Syolk"],
+  "albumArtAsset": "freeplay/albumRoll/tomato-demo",
+  "albumTitleAsset": "freeplay/albumRoll/tomato-demo-text"
+}

@@ -1,0 +1,73 @@
+{
+  "version": "1.0.0",
+  "name": "Tomato Town",
+  "cameraZoom": 0.72,
+  "props": [
+    {
+      "zIndex": 10,
+      "position": [-423, 0],
+      "scale": [0.65, 0.65],
+      "animType": "sparrow",
+      "name": "tomato-town-bg",
+      "isPixel": false,
+      "assetPath": "tomato-town/tomato-town-bg",
+      "scroll": [0.2, 0.2],
+      "animations": []
+    },
+    {
+      "zIndex": -10,
+      "position": [-800, -500],
+      "scale": [1, 1],
+      "animType": "sparrow",
+      "name": "tomato-town-sky",
+      "isPixel": false,
+      "assetPath": "tomato-town/tomato-town-sky",
+      "scroll": [0.2, 0.2],
+      "animations": []
+    },
+    {
+      "zIndex": 20,
+      "position": [-925, -1600],
+      "scale": [0.72, 0.72],
+      "animType": "sparrow",
+      "name": "tomato-town-stage",
+      "isPixel": false,
+      "assetPath": "tomato-town/tomato-town-stage",
+      "scroll": [0.9, 0.9],
+      "animations": []
+    },
+    {
+      "name": "dragoons-boppin",
+      "assetPath": "tomato-town/dragoons-boppin",
+      "position": [-800, 308],
+      "scale": [1.2, 1.2],
+      "scroll": [1.6, 0.4],
+      "danceEvery": 2,
+      "zIndex": 400,
+      "startingAnimation": "idle",
+      "animations": [
+        {
+          "name": "idle",
+          "prefix": "dragoons",
+          "frameRate": 24,
+          "looped": false,
+          "flipX": false,
+          "flipY": false
+        }
+      ]
+    }
+  ],
+  "characters": {
+    "bf": {
+      "zIndex": 300,
+      "position": [1177.5, 871],
+      "cameraOffsets": [-142, -250]
+    },
+    "gf": { "zIndex": 100, "position": [608, 854], "cameraOffsets": [0, 0] },
+    "dad": {
+      "zIndex": 200,
+      "position": [51, 882],
+      "cameraOffsets": [320, -100]
+    }
+  }
+}

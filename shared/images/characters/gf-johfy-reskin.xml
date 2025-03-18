@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="gf-johfy-reskin.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="gf-danceidle0000" x="0" y="0" width="834" height="730" frameX="0" frameY="-5" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0001" x="0" y="0" width="834" height="730" frameX="0" frameY="-5" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0002" x="838" y="0" width="824" height="724" frameX="-5" frameY="-6" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0003" x="1666" y="0" width="824" height="724" frameX="-5" frameY="-6" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0004" x="2494" y="0" width="824" height="726" frameX="-5" frameY="-4" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0005" x="2494" y="0" width="824" height="726" frameX="-5" frameY="-4" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0006" x="0" y="734" width="824" height="726" frameX="-5" frameY="-4" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0007" x="828" y="734" width="824" height="730" frameX="-5" frameY="0" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0008" x="1656" y="734" width="824" height="730" frameX="-5" frameY="0" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0009" x="2484" y="734" width="824" height="730" frameX="-5" frameY="0" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0010" x="0" y="1468" width="824" height="729" frameX="-5" frameY="-1" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0011" x="0" y="1468" width="824" height="729" frameX="-5" frameY="-1" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0012" x="0" y="1468" width="824" height="729" frameX="-5" frameY="-1" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0013" x="828" y="1468" width="824" height="729" frameX="-5" frameY="-1" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0014" x="828" y="1468" width="824" height="729" frameX="-5" frameY="-1" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0015" x="1656" y="1468" width="834" height="714" frameX="0" frameY="-21" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0016" x="1656" y="1468" width="834" height="714" frameX="0" frameY="-21" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0017" x="2494" y="1468" width="824" height="708" frameX="-5" frameY="-22" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0018" x="0" y="2201" width="824" height="708" frameX="-5" frameY="-22" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0019" x="828" y="2201" width="824" height="709" frameX="-5" frameY="-21" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0020" x="828" y="2201" width="824" height="709" frameX="-5" frameY="-21" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0021" x="1656" y="2201" width="824" height="711" frameX="-5" frameY="-19" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0022" x="2484" y="2201" width="824" height="728" frameX="-5" frameY="-2" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0023" x="0" y="2933" width="824" height="728" frameX="-5" frameY="-2" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0024" x="828" y="2933" width="824" height="728" frameX="-5" frameY="-2" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0025" x="1656" y="2933" width="824" height="729" frameX="-5" frameY="-1" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0026" x="1656" y="2933" width="824" height="729" frameX="-5" frameY="-1" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0027" x="1656" y="2933" width="824" height="729" frameX="-5" frameY="-1" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0028" x="2484" y="2933" width="824" height="729" frameX="-5" frameY="-1" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-danceidle0029" x="2484" y="2933" width="824" height="729" frameX="-5" frameY="-1" frameWidth="834" frameHeight="735"/>
+	<SubTexture name="gf-cheer0000" x="0" y="3666" width="834" height="750"/>
+	<SubTexture name="gf-cheer0001" x="0" y="3666" width="834" height="750"/>
+	<SubTexture name="gf-cheer0002" x="838" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+	<SubTexture name="gf-cheer0003" x="1666" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+	<SubTexture name="gf-cheer0004" x="1666" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+	<SubTexture name="gf-cheer0005" x="1666" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+	<SubTexture name="gf-cheer0006" x="1666" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+	<SubTexture name="gf-cheer0007" x="1666" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+	<SubTexture name="gf-cheer0008" x="1666" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+	<SubTexture name="gf-cheer0009" x="1666" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+	<SubTexture name="gf-cheer0010" x="1666" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+	<SubTexture name="gf-cheer0011" x="1666" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+	<SubTexture name="gf-cheer0012" x="1666" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+	<SubTexture name="gf-cheer0013" x="1666" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+	<SubTexture name="gf-cheer0014" x="1666" y="3666" width="824" height="737" frameX="-5" frameY="-8" frameWidth="834" frameHeight="750"/>
+</TextureAtlas>

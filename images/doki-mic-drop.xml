@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="doki-mic-drop.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="maple-micdrop0000" x="0" y="0" width="470" height="780" frameX="-9" frameY="-8" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0001" x="0" y="0" width="470" height="780" frameX="-9" frameY="-8" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0002" x="474" y="0" width="495" height="782" frameX="-30" frameY="-6" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0003" x="474" y="0" width="495" height="782" frameX="-30" frameY="-6" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0004" x="973" y="0" width="624" height="769" frameX="-5" frameY="-19" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0005" x="0" y="786" width="632" height="780" frameX="0" frameY="-8" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0006" x="0" y="786" width="632" height="780" frameX="0" frameY="-8" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0007" x="636" y="786" width="631" height="785" frameX="-3" frameY="-3" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0008" x="636" y="786" width="631" height="785" frameX="-3" frameY="-3" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0009" x="1271" y="786" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0010" x="1271" y="786" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0011" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0012" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0013" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0014" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0015" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0016" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0017" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0018" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0019" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0020" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0021" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0022" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0023" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0024" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0025" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0026" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0027" x="0" y="1578" width="630" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0028" x="634" y="1578" width="629" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0029" x="1267" y="1578" width="629" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0030" x="0" y="2370" width="629" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0031" x="633" y="2370" width="629" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0032" x="1266" y="2370" width="631" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0033" x="1266" y="2370" width="631" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0034" x="0" y="3162" width="634" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0035" x="0" y="3162" width="634" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0036" x="638" y="3162" width="663" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0037" x="638" y="3162" width="663" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0038" x="1305" y="3162" width="610" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0039" x="1305" y="3162" width="610" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0040" x="1305" y="3162" width="610" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0041" x="1305" y="3162" width="610" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0042" x="1305" y="3162" width="610" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0043" x="1305" y="3162" width="610" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0044" x="1305" y="3162" width="610" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0045" x="1305" y="3162" width="610" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0046" x="1305" y="3162" width="610" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+	<SubTexture name="maple-micdrop0047" x="1305" y="3162" width="610" height="788" frameX="-5" frameY="0" frameWidth="668" frameHeight="788"/>
+</TextureAtlas>

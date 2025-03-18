@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="p-rank-gold.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="p-rank-gold0000" x="259" y="512" width="85" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0001" x="259" y="512" width="85" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0002" x="349" y="512" width="85" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0003" x="353" y="409" width="85" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0004" x="353" y="409" width="85" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0005" x="388" y="275" width="85" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0006" x="388" y="275" width="85" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0007" x="308" y="0" width="101" height="115" frameX="-37" frameY="-46" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0008" x="308" y="0" width="101" height="115" frameX="-37" frameY="-46" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0009" x="135" y="518" width="119" height="133" frameX="-19" frameY="-28" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0010" x="135" y="518" width="119" height="133" frameX="-19" frameY="-28" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0011" x="164" y="144" width="121" height="136" frameX="-17" frameY="-25" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0012" x="164" y="144" width="121" height="136" frameX="-17" frameY="-25" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0013" x="252" y="409" width="96" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0014" x="252" y="409" width="96" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0015" x="252" y="285" width="131" height="119" frameX="-20" frameY="-44" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0016" x="252" y="285" width="131" height="119" frameX="-20" frameY="-44" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0017" x="164" y="0" width="139" height="139" frameX="-2" frameY="-22" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0018" x="164" y="0" width="139" height="139" frameX="-2" frameY="-22" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0019" x="0" y="176" width="159" height="158" frameX="0" frameY="-3" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0020" x="0" y="0" width="159" height="171" frameX="0" frameY="-3" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0021" x="135" y="339" width="112" height="174" frameX="-49" frameY="0" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0022" x="0" y="339" width="130" height="189" frameX="-31" frameY="0" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0023" x="290" y="144" width="107" height="126" frameX="-31" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0024" x="0" y="533" width="109" height="129" frameX="-29" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0025" x="0" y="533" width="109" height="129" frameX="-29" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0026" x="402" y="120" width="85" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0027" x="402" y="120" width="85" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0028" x="402" y="120" width="85" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+	<SubTexture name="p-rank-gold0029" x="402" y="120" width="85" height="98" frameX="-53" frameY="-63" frameWidth="161" frameHeight="192"/>
+</TextureAtlas>

@@ -1,0 +1,14 @@
+{
+  "name": "kagami",
+  "artist": "Afeefflox",
+  "stickers": {
+    "pack1": ["kagamisticker1", "kagamisticker2", "kagamisticker3", "kagamisticker4"],
+    "pack2": ["kagamisticker5", "kagamisticker6", "kagamisticker7", "kagamisticker8"],
+    "pack3": ["kagamisticker9", "kagamisticker10"]   
+  },
+  "stickerPacks": {
+    "placeholder": ["this line has no function yet"],
+    "all": ["pack1", "pack2", "pack3"]
+  }
+}
+  

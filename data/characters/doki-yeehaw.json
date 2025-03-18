@@ -1,0 +1,40 @@
+{
+	"version": "1.0.0",
+	"name": "Doki (Yeehaw)",
+	"renderType": "animateatlas",
+	"assetPath": "shared:characters/doki-yeehaw",
+	"singTime": 8.0,
+	"offsets": [100, -180],
+	"scale": 0.9,
+	"cameraOffsets": [250, 76],
+	"healthIcon": {
+		"id": "dokibird"
+	},
+	"animations": [
+		{
+			"name": "idle",
+			"prefix": "idle",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singLEFT",
+			"prefix": "singLEFT",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singUP",
+			"prefix": "singUP",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singDOWN",
+			"prefix": "singDOWN",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singRIGHT",
+			"prefix": "singRIGHT",
+			"offsets": [0, 0]
+		}
+	]  	 
+}
