@@ -12,7 +12,6 @@
 /out
 /installer
 
-/main
 .tmp-earthly-out*
 
 main/
