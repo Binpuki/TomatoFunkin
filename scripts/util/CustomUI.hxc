@@ -35,6 +35,8 @@ class CustomUI extends Module
   var ratingPercent:Float;
   var allowUIRegen = true;
 
+  var scuffs:Int = 0;
+
   override function onSongLoaded(event:SongLoadScriptEvent)
   {
     super.onSongLoaded(event);
@@ -116,9 +118,14 @@ class CustomUI extends Module
   function onUpdate(event)
   {
     super.onUpdate(event);
-    updateScoreText();
 
-    if (PlayState.instance == null) return;
+    if (PlayState.instance == null) 
+    {
+      scuffs = 0;
+      return;
+    }
+
+    updateScoreText();
     var game = PlayState.instance;
 
     debugControl(event.elapsed);
@@ -140,7 +147,7 @@ class CustomUI extends Module
     if (game.isBotPlayMode) return;
 
     scoreTxt.scriptCall("displayText", [Std.string(game.songScore), true]);
-    missedText.scriptCall("displayText", [Std.string(Highscore.tallies.missed), false]);
+    missedText.scriptCall("displayText", [Std.string(scuffs), false]);
   }
 
   function debugControl(elapsed:Float)
@@ -224,21 +231,44 @@ class CustomUI extends Module
     }
   }
 
+  override function onStateChangeBegin(event:StateChangeScriptEvent) 
+  {
+    super.onStateChangeBegin(event);
+
+    if (!(event.targetState is PlayState))
+      return;
+    
+    scuffs = 0;
+  }
+
   override function onNoteHit(event:HitNoteScriptEvent)
   {
     super.onNoteHit(event);
-    if (PlayState.instance == null) return;
-    var game = PlayState.instance;
+    if (PlayState.instance == null) 
+      return;
 
-    if (game.isPracticeMode && game.isBotPlayMode) return;
-    new FlxTimer().start(0.01, (_) -> recalculateRating());
+    var game = PlayState.instance;
+    if (game.isPracticeMode && game.isBotPlayMode) 
+      return;
+    
+    if (event.isComboBreak)
+      scuffs++;
+
+    recalculateRating();
   }
 
   override function onNoteMiss(event:NoteScriptEvent)
   {
-    new FlxTimer().start(0.01, (_) -> recalculateRating());
-    // Ensure, that the current note is counted too...
     super.onNoteMiss(event);
+    scuffs++;
+    recalculateRating();
+  }
+
+  override function onNoteGhostMiss(event:GhostMissNoteScriptEvent) 
+  {
+    super.onNoteGhostMiss(event);
+    scuffs++;
+    recalculateRating();
   }
 
   override function onStateChangeBegin(event:StateChangeScriptEvent)
