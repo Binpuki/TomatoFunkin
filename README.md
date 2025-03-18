@@ -1,6 +1,6 @@
 # Tomato Funkin' (DEMO)
 
-Tomato Funkin' is a work-in-progress Friday Night Funkin' v0.5.3 mod about the vtuber Dokibird; a ~~tomato~~ former phantom thief, now bounty hunter.
+Tomato Funkin' is a work-in-progress [Friday Night Funkin' v0.5.3](https://ninja-muffin24.itch.io/funkin) mod about the vtuber Dokibird; a ~~tomato~~ former phantom thief, now bounty hunter.
 
 Made using Friday Night Funkin's Haxe polymod.
 
