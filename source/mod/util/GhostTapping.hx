@@ -1,0 +1,20 @@
+package mod.util;
+
+import funkin.play.PlayState;
+import funkin.modding.module.Module;
+import funkin.util.Constants;
+
+class GhostTappingModule extends Module
+{
+  private function new()
+  {
+    super("GhostTapping");
+  }
+
+  override private function onStateChangeEnd(event)
+  {
+    if (PlayState.instance != null) Constants.GHOST_TAPPING = true;
+
+    super.onStateChangeEnd(event);
+  }
+}

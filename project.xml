@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Hello World" package="org.openfl.lime.samples.helloworld" version="1.0.0" company="OpenFL" />
+	<app main="Main" path="main" file="HelloWorld" />
+	<classpath name="source" />
+	<classpath name="source/mod" />
+
+	
+	<haxelib name="funkin"/>
+	<haxelib name="lime" />
+	<haxelib name="flixel-addons" /> <!-- Additional utilities for Flixel -->
+	<haxelib name="hscript" /> <!-- Scripting -->
+	<haxelib name="haxeui-core" /> <!-- UI framework -->
+	<haxelib name="haxeui-flixel" /> <!-- Integrate HaxeUI with Flixel -->
+	<haxelib name="flixel-text-input" /> <!-- Improved text field rendering for HaxeUI -->
+	<haxelib name="polymod" /> <!-- Modding framework -->
+	<haxelib name="flxanimate" /> <!-- Texture atlas rendering -->
+	<haxelib name="funkin.vis"/>
+	<haxelib name="grig.audio" />
+	<haxelib name="hxCodec" />
+
+	<haxelib name="FlxPartialSound" /> <!-- Loading partial sound data -->
+
+	<haxelib name="json2object" /> <!-- JSON parsing -->
+	<haxelib name="jsonpath" />
+	<haxelib name="thx.core" /> <!-- General utility library, "the lodash of Haxe" -->
+	<haxelib name="thx.semver" /> <!-- Version string handling -->
+
+	<haxeflag name="--macro" value="include('funkin')" />
+	<!-- Disable this if you want...-->
+</project>

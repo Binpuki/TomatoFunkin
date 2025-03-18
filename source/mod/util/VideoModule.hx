@@ -1,0 +1,105 @@
+package mod.util;
+
+import funkin.play.PlayState;
+import funkin.modding.module.Module;
+import funkin.modding.events.ScriptEvent;
+import funkin.play.cutscene.VideoCutscene;
+import hxcodec.flixel.FlxVideoSprite;
+import flixel.FlxG;
+import flixel.tweens.FlxTween;
+import flixel.tweens.FlxEase;
+
+class VideoModule extends Module {
+  var vidEvent:FlxVideoSprite;
+  /**
+   * onEndReached can't access isCutscene directly for some reason? That's why this boolean is here.
+   */
+  var shittyBool:Bool;
+  function new() {
+		super('VideoModule');
+	}
+
+  public function createVid(filePath:String, ?isCutscene:Bool = false):Void {
+    shittyBool = isCutscene;
+    isweartogod = filePath;
+    vidEvent = new FlxVideoSprite(0, 0);
+    if (vidEvent == null){
+      trace('ALERT: The video is null! :(');
+      return;
+    }
+    vidEvent.zIndex = 5000;
+    vidEvent.bitmap.onEndReached.add(function()
+    {
+        if (shittyBool)
+        {
+            PlayState.instance.camCutscene.visible = false;
+            PlayState.instance.camHUD.visible = true;
+            PlayState.instance.camHUD.alpha = 0;
+            FlxTween.tween(PlayState.instance.camHUD, { alpha: 1 }, 0.5, { ease: FlxEase.quadInOut });
+            PlayState.instance.isInCutscene = false;
+        }
+        PlayState.instance.currentStage.remove(vidEvent);
+        PlayState.instance.currentStage.refresh();
+    }, true);
+
+    vidEvent.autoPause = false;
+    vidEvent.bitmap.onTextureSetup.add(() -> {
+        vidEvent.setGraphicSize(FlxG.width, FlxG.height);
+        vidEvent.updateHitbox();
+        vidEvent.x = 0;
+        vidEvent.y = 0;
+    });
+
+    PlayState.instance.currentStage.add(vidEvent);
+    PlayState.instance.currentStage.refresh();
+
+    if (isCutscene){
+        FlxTween.tween(PlayState.instance.camHUD, { alpha: 0 }, 1,
+        {
+            ease: FlxEase.quadOut,
+            onComplete: function(twn:FlxTween)
+            {
+                vidEvent.cameras = [PlayState.instance.camCutscene];
+                PlayState.instance.camHUD.visible = false;
+                PlayState.instance.camCutscene.visible = true;
+                vidEvent.play(isweartogod);
+                VideoCutscene.onVideoStarted.dispatch();
+            }
+        });
+    }
+    else
+    {
+        vidEvent.cameras = [PlayState.instance.camHUD];
+        vidEvent.play(isweartogod);
+        VideoCutscene.onVideoStarted.dispatch();
+    }
+  }
+
+  function onPause(event:ScriptEvent){
+    super.onPause(event);
+    if (vidEvent != null){
+        vidEvent.pause();
+        VideoCutscene.onVideoPaused.dispatch();
+    }
+  }
+
+  function onResume(event:ScriptEvent){
+    super.onResume(event);
+    if (vidEvent != null){
+        vidEvent.resume();
+        VideoCutscene.onVideoResumed.dispatch();
+    }
+  }
+
+  function onSongRetry(event:ScriptEvent){
+    super.onSongRetry(event);
+    if (vidEvent != null)
+        vidEvent.destroy();
+  }
+
+  function onGameOver(event:ScriptEvent){
+    super.onGameOver(event);
+    if (vidEvent != null)
+        vidEvent.destroy();
+  }
+}
