@@ -24,4 +24,4 @@ Made using Friday Night Funkin's Haxe polymod.
 * [lin_vt_/Linkaimaine](https://twitter.com/lin_vt_) - Art for "The Final Heist MV" used as overlay for Promo Art 3
 * [Dokibird Public Squad](https://twitter.com/dokibirdsquad) - Dragoons/Bark Knights fancord who helped promote this mod
 
-Mod version: 0.1.1 (Demo)
+Mod version: 0.1.0 (Demo)
