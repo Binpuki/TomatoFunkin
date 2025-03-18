@@ -86,7 +86,7 @@ class CustomMainMenu extends ScriptedMusicBeatState
     theBarThing2.scrollFactor.set();
     add(theBarThing2);
 
-    FunkinSound.playMusic('freakyMenu', {overrideExisting: true, restartTrack: false});
+    if (freeplay == null || !freeplay.alive) FunkinSound.playMusic('freakyMenu', {overrideExisting: true, restartTrack: false});
     menuItems = new ScriptedFlxSpriteGroup();
     add(menuItems);
 
@@ -129,7 +129,6 @@ class CustomMainMenu extends ScriptedMusicBeatState
         trace("Is Sticker: " + (freeplay.stickerSubState != null));
         openSubState(new FreeplayState(
           {
-            character: "bf",
             fromResults: freeplay.fromResultsParams
           }, freeplay.stickerSubState));
         freeplay = null;
