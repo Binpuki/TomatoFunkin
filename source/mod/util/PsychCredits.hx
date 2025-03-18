@@ -32,7 +32,7 @@ class PsychCredits extends ScriptedMusicBeatState
         ["Placeholder Mod Credits"],
         ["Afeefflox", "afeefflox", "Kagami my beloved (he's one of the programmers)", "https://twitter.com/afeefflox_lol"],
         ["johfydrawsstuff", "johfy", "Director, Artist, Animator, Charter", "https://twitter.com/johfydrawsstuff"],
-        ["Ethan The Hedgehog", "ethan-the-sonic", "Composer", "https://twitter.com/hedgehog_ethan"],
+        ["EthanX", "ethan-the-sonic", "Composer", "https://twitter.com/hedgehog_ethan"],
         ["Syolk", "syolk", "Composer", "https://www.youtube.com/@yolkproductions5683"],
         ["kromiibytes", "kromiibytes", "Awesome artist who made the second promo art", "https://kromissions.carrd.co/ "],
         ["Binpuki", "binpuki", "Programmer, Bugfixer", "https://twitter.com/binpuki_"],
