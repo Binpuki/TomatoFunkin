@@ -21,7 +21,7 @@ Made using Friday Night Funkin's Haxe polymod.
 # Special Thanks
 
 * [Dokibird](https://www.youtube.com/watch?v=7o7_2n_JTQ4) - The ~~tomato~~ bird herself
-* [lin_vt_/Linkaimaine](https://twitter.com/lin_vt_) - Art for "The Final Heist MV" used as overlay for Promo Art 3
+* [lin_vt_/Linkaimane](https://twitter.com/lin_vt_) - Art for "The Final Heist MV" used as overlay for Promo Art 3
 * [Dokibird Public Squad](https://twitter.com/dokibirdsquad) - Dragoons/Bark Knights fancord who helped promote this mod
 
 Mod version: 0.1.0 (Demo)
