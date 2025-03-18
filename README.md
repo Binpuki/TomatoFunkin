@@ -4,6 +4,22 @@ Tomato Funkin' is a work-in-progress [Friday Night Funkin' v0.5.3](https://ninja
 
 Made using Friday Night Funkin's Haxe polymod.
 
+# How to compile
+
+It is recommended to setup FunkinCompiler in this repo before starting the work.
+
+https://github.com/FunkinCompiler/FunkinCompiler#how-to-install
+
+But if you're not into that, running the "compiler.exe" and running either 'just-compile' or 'export' subprogram will give you a mod for testing.
+
+# How to edit
+
+Most of the mod's assets are in "mod_base"
+
+The song files are in "fnfc_files"
+
+The code of the mod is in "source/mod"
+
 # Credits
 
 * [johfydrawsstuff](https://twitter.com/johfydrawsstuff) - Director, Artist, Animator, Charter
