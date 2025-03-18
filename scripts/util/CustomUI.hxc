@@ -39,6 +39,8 @@ class CustomUI extends Module
 
   override function onSongLoaded(event:SongLoadScriptEvent)
   {
+    scuffs = 0;
+
     super.onSongLoaded(event);
     trace("Allow Regen: " + allowUIRegen);
     if (PlayState.instance == null || !allowUIRegen) return;
@@ -231,16 +233,6 @@ class CustomUI extends Module
     }
   }
 
-  override function onStateChangeBegin(event:StateChangeScriptEvent) 
-  {
-    super.onStateChangeBegin(event);
-
-    if (!(event.targetState is PlayState))
-      return;
-    
-    scuffs = 0;
-  }
-
   override function onNoteHit(event:HitNoteScriptEvent)
   {
     super.onNoteHit(event);
@@ -260,13 +252,6 @@ class CustomUI extends Module
   override function onNoteMiss(event:NoteScriptEvent)
   {
     super.onNoteMiss(event);
-    scuffs++;
-    recalculateRating();
-  }
-
-  override function onNoteGhostMiss(event:GhostMissNoteScriptEvent) 
-  {
-    super.onNoteGhostMiss(event);
     scuffs++;
     recalculateRating();
   }
