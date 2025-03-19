@@ -1,7 +1,7 @@
 {
   "version": "2.2.2",
   "songName": "Heist",
-  "artist": "Yolk",
+  "artist": "Syolk",
   "divisions": 96,
   "looped": false,
   "offsets": {
@@ -24,7 +24,7 @@
       "altInstrumentals": [      ]
     },
     "stage": "tomato-stadium",
-    "noteStyle": "funkin",
+    "noteStyle": "doki-judgements",
     "album": "tomato-demo",
     "ratings": {
       "normal": 7,

@@ -1,7 +1,7 @@
 {
   "version": "2.2.2",
   "songName": "Dokibird",
-  "artist": "EthanTheHedgehog",
+  "artist": "EthanX",
   "divisions": 96,
   "looped": false,
   "offsets": {
@@ -24,7 +24,7 @@
       "altInstrumentals": [      ]
     },
     "stage": "tomato-town",
-    "noteStyle": "funkin",
+    "noteStyle": "doki-judgements",
     "album": "tomato-demo",
     "ratings": {
       "easy": 2,
