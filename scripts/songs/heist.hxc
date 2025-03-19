@@ -26,7 +26,7 @@ class Heist extends Song
   override function onSongLoaded(event:SongLoadScriptEvent)
   {
     hasSeenInitialCutScene = false;
-    hasStartedTheSong = true;
+    hasStartedTheSong = false;
     super.onSongLoaded(event);
   }
 
@@ -52,9 +52,9 @@ class Heist extends Song
   override function onUpdate(event:UpdateScriptEvent)
   {
     if (PlayState.instance != null && !PlayState.instance.mayPauseGame) PlayState.instance.justUnpaused = true;
-    if (!hasStartedTheSong && VideoCutscene.vid.bitmap.position > (SONG_DELAY / VideoCutscene.vid.bitmap.duration))
+    if (!hasStartedTheSong && VideoCutscene.vid.bitmap.time > SONG_DELAY)
     {
-      trace('Tracking: ' + SONG_DELAY + '/' + VideoCutscene.vid.bitmap.duration);
+      //trace('Tracking: ' + SONG_DELAY + '/' + VideoCutscene.vid.bitmap.duration);
       PlayState.instance.startSong();
       PlayState.instance.isInCountdown = true;
       hasStartedTheSong = true;
