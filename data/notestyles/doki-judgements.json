@@ -6,7 +6,7 @@
   "assets": {
     "note": {
       "assetPath": "shared:notes",
-      "scale": 1.0,
+      "scale": 0.7,
       "data": {
         "left": { "prefix": "noteLeft" },
         "down": { "prefix": "noteDown" },
