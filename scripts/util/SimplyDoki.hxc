@@ -1,0 +1,88 @@
+import funkin.play.PlayState;
+import funkin.play.notes.Strumline;
+import funkin.play.notes.NoteSprite;
+import funkin.modding.module.Module;
+
+class SimplyDokiModule extends Module
+{
+    var NOTE_STYLE_ID:String = "simply-dokibird";
+    var frameIndices:Array<Int> = [0, 4, 6, 8];
+
+    var actOnPlayer:Bool = false;
+    var actOnOpponent:Bool = false;
+
+    // Y'know, I've always wondered why Funkin' calls these "strumlines". Wtf are you strumming? - Binpuki
+    var playerBarLine:Strumline;
+    var opponentBarLine:Strumline;
+
+    var curIndex:Int = 0;
+
+    var barLineArray:Array<Strumline> = [];
+
+	private function new()
+	{
+		super("SimplyDoki");
+	}
+
+    function updateNote(note:NoteSprite)
+    {
+        if (note == null)
+            return;
+
+        note.animation.curAnim.curFrame = frameIndices[curIndex];
+    }
+
+    override function onSongLoaded(event:SongLoadScriptEvent)
+    {
+        super.onSongLoaded(event);
+
+        var game = PlayState.instance;
+        if (game == null)
+            return;
+        
+        actOnPlayer = game.playerStrumline.noteStyle.id == NOTE_STYLE_ID;
+        actOnOpponent = game.opponentStrumline.noteStyle.id == NOTE_STYLE_ID;
+
+        if (actOnPlayer)
+            playerBarLine = game.playerStrumline;
+        
+        if (actOnOpponent)
+            opponentBarLine = game.opponentStrumline;
+    }
+
+    override function onStepHit(event:SongTimeScriptEvent) 
+    {
+        super.onStepHit(event);
+
+        var game = PlayState.instance;
+        if (game == null)
+            return;
+
+        if (!actOnPlayer && !actOnOpponent)
+            return;
+
+        // Get frame to set to
+        curIndex = event.step % 4;
+        trace("CUR STEP IM GONNA KMS efvojijejewjferiofrfe " + curIndex);
+
+        barLineArray = [];
+        if (actOnPlayer)
+            barLineArray.push(playerBarLine);
+        
+        if (actOnOpponent)
+            barLineArray.push(opponentBarLine);
+        
+        for (i in 0...barLineArray.length)
+        {
+            var curBarLine = barLineArray[i];
+            var renderedNotes = curBarLine.notes.members;
+            for (j in 0...renderedNotes.length)
+                updateNote(renderedNotes[j]);
+        }
+    }
+
+    override function onNoteIncoming(event:NoteScriptEvent)
+    {
+        updateNote(event.note);
+    }
+}
