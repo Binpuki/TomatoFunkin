@@ -11,7 +11,7 @@ import funkin.Paths;
 class SimplyDokiModule extends Module
 {
     var NOTE_SPLASH_FRAMES:FlxAtlasFrames;
-    var HOLD_COVER_FRAMES:FlxAtlasFrames;
+    //var HOLD_COVER_FRAMES:FlxAtlasFrames;
 
     var NOTE_STYLE_ID:String = "simply-dokibird";
     var frameIndices:Array<Int> = [0, 4, 6, 8];
@@ -38,8 +38,8 @@ class SimplyDokiModule extends Module
         NOTE_SPLASH_FRAMES = Paths.getSparrowAtlas("simply-doki-splashes", "shared");
         NOTE_SPLASH_FRAMES.parent.persist = true;
 
-        HOLD_COVER_FRAMES = Paths.getSparrowAtlas("simply-doki-suscovers", "shared");
-        HOLD_COVER_FRAMES.parent.persist = true;
+        //HOLD_COVER_FRAMES = Paths.getSparrowAtlas("simply-doki-suscovers", "shared");
+        //HOLD_COVER_FRAMES.parent.persist = true;
 	}
 
     function updateNote(note:NoteSprite)
@@ -134,7 +134,7 @@ class SimplyDokiModule extends Module
             playerBarLine.insert(0, playerHoldContainer);
 
             playerSplashes = playerBarLine.noteSplashes;
-            playerHoldCovers = playerBarLine.noteHoldCovers;
+            //playerHoldCovers = playerBarLine.noteHoldCovers;
         }
         
         if (actOnOpponent)
@@ -146,7 +146,7 @@ class SimplyDokiModule extends Module
             opponentBarLine.remove(oppHoldContainer);
             opponentBarLine.insert(0, oppHoldContainer);
 
-            opponentHoldCovers = opponentBarLine.noteHoldCovers;
+            //opponentHoldCovers = opponentBarLine.noteHoldCovers;
         }
     }
 
@@ -164,17 +164,20 @@ class SimplyDokiModule extends Module
                 for (member in playerSplashes.members)
                     updateSplash(member);
     
+            /*
             if (playerHoldCovers != null)
                 for (member in playerHoldCovers.members)
-                    updateHoldCover(member);
+                    updateHoldCover(member);*/
         }
         
+        /*
         if (actOnOpponent)
         {
             if (opponentHoldCovers != null)
                 for (member in opponentHoldCovers.members)
                     updateHoldCover(member);
         }
+            */
     }
 
     override function onStepHit(event:SongTimeScriptEvent) 
