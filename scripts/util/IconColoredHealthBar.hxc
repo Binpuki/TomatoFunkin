@@ -109,6 +109,7 @@ class IconColoredHealthBar extends Module {
 	}
 
     function onPlayStateEnter() {
+        state.healthBarBG.makeGraphic(601, 19, 0xFFFFFFFF);
         updateHealthBarColors();
     }
 }
