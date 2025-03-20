@@ -44,10 +44,24 @@ class SimplyDokiModule extends Module
         actOnOpponent = game.opponentStrumline.noteStyle.id == NOTE_STYLE_ID;
 
         if (actOnPlayer)
+        {
             playerBarLine = game.playerStrumline;
+            playerBarLine.holdNotes.zIndex = 5;
+
+            var playerHoldContainer = playerBarLine.holdNotes;
+            playerBarLine.remove(playerHoldContainer);
+            playerBarLine.insert(0, playerHoldContainer);
+        }
         
         if (actOnOpponent)
+        {
             opponentBarLine = game.opponentStrumline;
+            opponentBarLine.holdNotes.zIndex = 5;
+
+            var oppHoldContainer = opponentBarLine.holdNotes;
+            opponentBarLine.remove(oppHoldContainer);
+            opponentBarLine.insert(0, oppHoldContainer);
+        }
     }
 
     override function onStepHit(event:SongTimeScriptEvent) 
@@ -63,7 +77,6 @@ class SimplyDokiModule extends Module
 
         // Get frame to set to
         curIndex = event.step % 4;
-        trace("CUR STEP IM GONNA KMS efvojijejewjferiofrfe " + curIndex);
 
         barLineArray = [];
         if (actOnPlayer)
