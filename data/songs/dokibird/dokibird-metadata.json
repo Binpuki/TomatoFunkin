@@ -1,13 +1,15 @@
 {
-  "version": "2.2.2",
+  "version": "2.2.4",
   "songName": "Dokibird",
   "artist": "EthanX",
+  "charter": "johfy, SakuraCharter ",
   "divisions": 96,
   "looped": false,
   "offsets": {
     "instrumental": 0,
     "altInstrumentals": {    },
-    "vocals": {    }
+    "vocals": {    },
+    "altVocals": {    }
   },
   "playData": {
     "songVariations": [    ],
@@ -21,20 +23,26 @@
       "girlfriend": "gf-riding-dragoon",
       "opponent": "dokibird",
       "instrumental": "",
-      "altInstrumentals": [      ]
+      "altInstrumentals": [      ],
+      "opponentVocals": [
+        "dokibird"
+      ],
+      "playerVocals": [
+        "bf-johfy-reskin"
+      ]
     },
     "stage": "tomato-town",
-    "noteStyle": "simply-dokibird",
-    "album": "tomato-demo",
+    "noteStyle": "doki-judgements",
     "ratings": {
       "easy": 2,
-      "normal": 5,
-      "hard": 8
+      "hard": 9,
+      "normal": 5
     },
+    "album": "tomato-demo",
     "previewStart": 0,
     "previewEnd": 0
   },
-  "generatedBy": "Friday Night Funkin' - v0.3.2",
+  "generatedBy": "Friday Night Funkin' - v0.5.3",
   "timeFormat": "ms",
   "timeChanges": [
     {
