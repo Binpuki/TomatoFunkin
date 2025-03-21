@@ -109,6 +109,10 @@ class SimplyDokiModule extends Module
         splash.animation.addByPrefix('splash2Up', 'splashUp20', 24, false, false, false);
         splash.animation.addByPrefix('splash2Right', 'splashRight20', 24, false, false, false);
 
+        splash.scale.set(0.7, 0.7);
+        splash.y -= 10;
+        splash.x += 10;
+
         if (curAnimName != "")
             splash.animation.play(curAnimName, true, false, curAnimFrame);
     }
