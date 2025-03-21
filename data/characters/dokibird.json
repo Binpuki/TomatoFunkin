@@ -11,22 +11,8 @@
 		"offsets": [0, 0]
 	  },
 	  {
-		"name": "idle-hold",
-		"prefix": "maple-idle",
-		"looped": true,
-		"frameIndices": [11, 12],
-		"offsets": [0, 0]
-	  },
-	  {
 		"name": "singLEFT",
 		"prefix": "maple-left",
-		"offsets": [235, -15]
-	  },
-	  {
-		"name": "singLEFT-hold",
-		"prefix": "maple-left",
-		"looped": true,
-		"frameIndices": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
 		"offsets": [235, -15]
 	  },
 	  {
@@ -35,22 +21,8 @@
 		"offsets": [-25, -70]
 	  },
 	  {
-		"name": "singDOWN-hold",
-		"prefix": "maple-down",
-		"looped": true,
-		"frameIndices": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
-		"offsets": [-25, -70]
-	  },
-	  {
 		"name": "singUP",
 		"prefix": "maple-up",
-		"offsets": [14, 105]
-	  },
-	  {
-		"name": "singUP-hold",
-		"prefix": "maple-up",
-		"looped": true,
-		"frameIndices": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
 		"offsets": [14, 105]
 	  },
 	  {
@@ -59,16 +31,21 @@
 		"offsets": [-5, 6]
 	  },
 	  {
-		"name": "singRIGHT-hold",
-		"prefix": "maple-right",
-		"looped": true,
-		"frameIndices": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
-		"offsets": [-5, 6]
-	  },
-	  {
 		"name": "engineLaugh",
 		"prefix": "tomato-placeholder",
 		"offsets": [242, -241]
+	  },
+	  {
+		"name": "dokiTalk1",
+		"prefix": "maple-talk-1",
+		"assetPath": "characters/doki-talk-1",
+		"offsets": [0, 0]
+	  },
+	  {
+		"name": "dokiTalk2",
+		"prefix": "maple-talk-2",
+		"assetPath": "characters/doki-talk-2",
+		"offsets": [90, 92]
 	  }
 	]
   }

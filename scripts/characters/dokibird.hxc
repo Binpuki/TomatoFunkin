@@ -13,7 +13,13 @@ class DokibirdCharacter extends MultiSparrowCharacter {
         if (!event.note.noteData.getMustHitNote() && event.note.kind == "engineLaugh" && characterType == CharacterType.DAD) 
         {
             holdTimer = 0;
-            playAnimation('engineLaugh', true, true);
+            playAnimation('dokiTalk1', true, true);
+            return;
+        },
+        if (!event.note.noteData.getMustHitNote() && event.note.kind == "engineLaugh" && characterType == CharacterType.DAD) 
+        {
+            holdTimer = 0;
+            playAnimation('dokiTalk2', true, true);
             return;
         }
     }

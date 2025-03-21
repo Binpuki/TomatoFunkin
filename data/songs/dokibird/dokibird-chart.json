@@ -2,8 +2,8 @@
   "version": "2.0.0",
   "scrollSpeed": {
     "easy": 2.1,
-    "normal": 2.1,
-    "hard": 2.1
+    "hard": 2.1,
+    "normal": 2.1
   },
   "events": [
     {
@@ -42,25 +42,34 @@
 }
     },
     {
+      "t": 41533.3333333333,
+      "e": "PlayAnimation",
+      "v": {
+	"target": "dad",
+	"anim": "dokiTalk1",
+	"force": true
+}
+    },
+    {
       "t": 41600,
       "e": "FocusCamera",
       "v": {
-	"x": 0,
 	"duration": 4,
+	"x": 0,
 	"y": 0,
-	"char": 1,
-	"ease": "CLASSIC"
+	"ease": "CLASSIC",
+	"char": 1
 }
     },
     {
       "t": 44800,
       "e": "FocusCamera",
       "v": {
-	"x": 0,
 	"duration": 4,
+	"x": 0,
 	"y": 0,
-	"char": 0,
-	"ease": "CLASSIC"
+	"ease": "CLASSIC",
+	"char": 0
 }
     },
     {
@@ -81,11 +90,11 @@
       "t": 64000,
       "e": "FocusCamera",
       "v": {
-	"x": 0,
 	"duration": 4,
+	"x": 0,
 	"y": -80,
-	"ease": "CLASSIC",
-	"char": 2
+	"char": 2,
+	"ease": "CLASSIC"
 }
     },
     {
@@ -99,11 +108,11 @@
       "t": 76800,
       "e": "FocusCamera",
       "v": {
-	"x": 0,
 	"duration": 4,
+	"x": 0,
 	"y": -90,
-	"ease": "CLASSIC",
-	"char": 2
+	"char": 2,
+	"ease": "CLASSIC"
 }
     },
     {
@@ -138,22 +147,22 @@
       "t": 115200,
       "e": "FocusCamera",
       "v": {
-	"x": 0,
 	"duration": 4,
+	"x": 0,
 	"y": -90,
-	"ease": "CLASSIC",
-	"char": 2
+	"char": 2,
+	"ease": "CLASSIC"
 }
     },
     {
       "t": 121600,
       "e": "FocusCamera",
       "v": {
-	"x": 0,
 	"duration": 4,
+	"x": 0,
 	"y": 0,
-	"ease": "CLASSIC",
-	"char": 0
+	"char": 0,
+	"ease": "CLASSIC"
 }
     },
     {
@@ -167,31 +176,40 @@
       "t": 123200,
       "e": "FocusCamera",
       "v": {
-	"x": 0,
 	"duration": 4,
+	"x": 0,
 	"y": -90,
-	"ease": "CLASSIC",
-	"char": 2
+	"char": 2,
+	"ease": "CLASSIC"
 }
     },
     {
       "t": 124000,
       "e": "ZoomCamera",
       "v": {
-	"ease": "expoOut",
 	"duration": 4,
-	"zoom": 1.2,
-	"mode": "stage"
+	"ease": "expoOut",
+	"mode": "stage",
+	"zoom": 1.2
 }
     },
     {
       "t": 124800,
       "e": "ZoomCamera",
       "v": {
-	"ease": "expoOut",
+	"ease": "linear",
 	"duration": 4,
 	"zoom": 1,
 	"mode": "stage"
+}
+    },
+    {
+      "t": 125533.333333333,
+      "e": "PlayAnimation",
+      "v": {
+	"target": "dad",
+	"anim": "dokiTalk2",
+	"force": true
 }
     }
   ],
@@ -3384,6 +3402,7 @@
         "p": [        ]
       }
     ],
+    "hard": [    ],
     "normal": [
       {
         "t": 400,
@@ -7381,8 +7400,7 @@
         "l": 1500,
         "p": [        ]
       }
-    ],
-    "hard": [    ]
+    ]
   },
   "generatedBy": "Friday Night Funkin' - v0.5.3"
 }

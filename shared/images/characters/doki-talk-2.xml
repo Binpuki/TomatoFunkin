@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="doki-talk-2.png">
+	<!-- Created with Adobe Flash CS6 version 12.0.0.481 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="maple-talk-20000" x="0" y="0" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20001" x="0" y="0" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20002" x="532" y="0" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20003" x="532" y="0" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20004" x="1064" y="0" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20005" x="1064" y="0" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20006" x="0" y="874" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20007" x="0" y="874" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20008" x="532" y="874" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20009" x="532" y="874" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20010" x="532" y="0" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20011" x="532" y="0" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20012" x="1064" y="874" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20013" x="1064" y="874" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20014" x="0" y="1748" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20015" x="0" y="1748" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20016" x="0" y="874" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20017" x="0" y="874" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20018" x="532" y="874" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20019" x="532" y="874" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20020" x="532" y="874" width="532" height="874" frameX="-76" frameY="0" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20021" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20022" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20023" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20024" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20025" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20026" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20027" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20028" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20029" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20030" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20031" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20032" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20033" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20034" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20035" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20036" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20037" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20038" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20039" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20040" x="0" y="2622" width="644" height="532" frameX="0" frameY="-276" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20041" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20042" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20043" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20044" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20045" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20046" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20047" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20048" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20049" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20050" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20051" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20052" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20053" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20054" x="532" y="1748" width="597" height="576" frameX="-24" frameY="-233" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20055" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20056" x="1129" y="1748" width="626" height="541" frameX="-9" frameY="-267" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20057" x="0" y="2622" width="644" height="532" frameX="0" frameY="-276" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20058" x="0" y="2622" width="644" height="532" frameX="0" frameY="-276" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20059" x="0" y="2622" width="644" height="532" frameX="0" frameY="-276" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20060" x="0" y="2622" width="644" height="532" frameX="0" frameY="-276" frameWidth="644" frameHeight="874"/>
+	<SubTexture name="maple-talk-20061" x="0" y="2622" width="644" height="532" frameX="0" frameY="-276" frameWidth="644" frameHeight="874"/>
+</TextureAtlas>
