@@ -15,7 +15,7 @@ class DokibirdCharacter extends MultiSparrowCharacter {
             holdTimer = 0;
             playAnimation('dokiTalk1', true, true);
             return;
-        },
+        }
         if (!event.note.noteData.getMustHitNote() && event.note.kind == "engineLaugh" && characterType == CharacterType.DAD) 
         {
             holdTimer = 0;
