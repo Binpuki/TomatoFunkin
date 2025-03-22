@@ -35,8 +35,12 @@ class CustomUI extends Module
   var ratingPercent:Float;
   var allowUIRegen = true;
 
+  var scuffs:Int = 0;
+
   override function onSongLoaded(event:SongLoadScriptEvent)
   {
+    scuffs = 0;
+
     super.onSongLoaded(event);
     trace("Allow Regen: " + allowUIRegen);
     if (PlayState.instance == null || !allowUIRegen) return;
@@ -107,9 +111,14 @@ class CustomUI extends Module
   function onUpdate(event)
   {
     super.onUpdate(event);
-    updateScoreText();
 
-    if (PlayState.instance == null) return;
+    if (PlayState.instance == null) 
+    {
+      scuffs = 0;
+      return;
+    }
+
+    updateScoreText();
     var game = PlayState.instance;
 
     debugControl(event.elapsed);
@@ -131,7 +140,7 @@ class CustomUI extends Module
     if (game.isBotPlayMode) return;
 
     scoreTxt.scriptCall("displayText", [Std.string(game.songScore), true]);
-    missedText.scriptCall("displayText", [Std.string(Highscore.tallies.missed), false]);
+    missedText.scriptCall("displayText", [Std.string(scuffs), false]);
   }
 
   function debugControl(elapsed:Float)
@@ -184,47 +193,55 @@ class CustomUI extends Module
     var isSFC = scoreData.good + scoreData.bad + scoreData.shit + scoreData.missed == 0;
 
     if (isSFC)
+    {
       rankSprite.animation.play('PERFECT-GOLD', false, false, 0);
+    }
     else
     {
       if (grade == Constants.RANK_PERFECT_THRESHOLD)
-      {
-        rankSprite.animation.play('PERFECT', false, false, 0);
-      }
-      else if (grade >= Constants.RANK_EXCELLENT_THRESHOLD)
-      {
-        rankSprite.animation.play('EXCELLENT', false, false, 0);
-      }
-      else if (grade >= Constants.RANK_GREAT_THRESHOLD)
-      {
-        rankSprite.animation.play('GREAT', false, false, 0);
-      }
-      else if (grade >= Constants.RANK_GOOD_THRESHOLD)
-      {
-        rankSprite.animation.play('GOOD', false, false, 0);
-      }
-      else
-      {
-        rankSprite.animation.play('LOSE', false, false, 0);
-      }
+        {
+          rankSprite.animation.play('PERFECT', false, false, 0);
+        }
+        else if (grade >= Constants.RANK_EXCELLENT_THRESHOLD)
+        {
+          rankSprite.animation.play('EXCELLENT', false, false, 0);
+        }
+        else if (grade >= Constants.RANK_GREAT_THRESHOLD)
+        {
+          rankSprite.animation.play('GREAT', false, false, 0);
+        }
+        else if (grade >= Constants.RANK_GOOD_THRESHOLD)
+        {
+          rankSprite.animation.play('GOOD', false, false, 0);
+        }
+        else
+        {
+          rankSprite.animation.play('LOSE', false, false, 0);
+        }
     }
   }
 
   override function onNoteHit(event:HitNoteScriptEvent)
   {
     super.onNoteHit(event);
-    if (PlayState.instance == null) return;
-    var game = PlayState.instance;
+    if (PlayState.instance == null) 
+      return;
 
-    if (game.isPracticeMode && game.isBotPlayMode) return;
-    new FlxTimer().start(0.01, (_) -> recalculateRating());
+    var game = PlayState.instance;
+    if (game.isPracticeMode && game.isBotPlayMode) 
+      return;
+    
+    if (event.isComboBreak)
+      scuffs++;
+
+    recalculateRating();
   }
 
   override function onNoteMiss(event:NoteScriptEvent)
   {
-    new FlxTimer().start(0.01, (_) -> recalculateRating());
-    // Ensure, that the current note is counted too...
     super.onNoteMiss(event);
+    scuffs++;
+    recalculateRating();
   }
 
   override function onStateChangeBegin(event:StateChangeScriptEvent)
