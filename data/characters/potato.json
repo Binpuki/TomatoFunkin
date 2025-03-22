@@ -1,0 +1,41 @@
+{
+	"version": "1.0.0",
+	"name": "Pomato",
+	"renderType": "packer",
+	"assetPath": "characters/Potato",
+	"singTime": 8.0,
+	"scale": 3,
+	"flipX": true,
+	"isPixel": true,
+	"healthIcon": {
+		"id": "bf-johfy-reskin"
+	},
+	"animations": [
+	  {
+		"name": "idle",
+		"prefix": "idle",
+		"offsets": [0, 0]
+	  },
+	  {
+		"name": "singLEFT",
+		"prefix": "left",
+		"offsets": [0, 0]
+	  },
+	  {
+		"name": "singDOWN",
+		"prefix": "down",
+		"offsets": [0, 0]
+	  },
+	  {
+		"name": "singUP",
+		"prefix": "up",
+		"offsets": [0, 0]
+	  },
+	  {
+		"name": "singRIGHT",
+		"prefix": "right",
+		"offsets": [0, 0]
+	  }
+	]
+  }
+  

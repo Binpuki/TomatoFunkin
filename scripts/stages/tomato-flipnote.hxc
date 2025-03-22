@@ -1,0 +1,49 @@
+import funkin.play.stage.Stage;
+import funkin.play.PlayState;
+import funkin.play.GitarooPause;
+import flixel.FlxG;
+
+class TomatoFlipnoteStage extends Stage
+{
+	function new() 
+    {
+		super('tomato-flipnote');
+    }
+
+    override function onCreate(event)
+    {
+        super.onCreate(event);
+
+        FlxG.camera.bgColor = 0xFFFFFFFF;
+    }
+
+    override function onSongLoaded(event)
+    {
+        super.onSongLoaded(event);
+
+        // Center lanes
+        var game = PlayState.instance;
+        var playerBarLine = game.playerStrumline;
+        var opponentBarLine = game.opponentStrumline;
+
+        opponentBarLine.x = 180;
+        playerBarLine.x = 652;
+
+        game.hudCameraZoomIntensity = 0.0;
+        game.cameraBopIntensity = 1.0;
+    }
+
+    override function onGameOver(event:ScriptEvent)
+    {
+        super.onGameOver(event);
+
+        var game = PlayState.instance;
+        game.remove(game.currentStage);
+        FlxG.switchState(() -> new GitarooPause(
+        {
+            targetSong: game.currentSong,
+            targetDifficulty: game.currentDifficulty,
+            targetVariation: game.currentVariation,
+        }));
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="doki-yeehawpixel.png">
+	<!-- Made using Maru Aseprite JSON to XML converter -->
+	<SubTexture name="idle00000" x="0" y="0" width="39" height="29"/>
+	<SubTexture name="confirm00000" x="39" y="0" width="39" height="29"/>
+	<SubTexture name="confirm00001" x="78" y="0" width="39" height="29"/>
+	<SubTexture name="confirm00002" x="117" y="0" width="39" height="29"/>
+	<SubTexture name="confirm-hold00000" x="117" y="0" width="39" height="29"/>
+</TextureAtlas>
