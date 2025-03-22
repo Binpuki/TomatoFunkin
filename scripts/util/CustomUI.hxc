@@ -35,12 +35,8 @@ class CustomUI extends Module
   var ratingPercent:Float;
   var allowUIRegen = true;
 
-  var scuffs:Int = 0;
-
   override function onSongLoaded(event:SongLoadScriptEvent)
   {
-    scuffs = 0;
-
     super.onSongLoaded(event);
     trace("Allow Regen: " + allowUIRegen);
     if (PlayState.instance == null || !allowUIRegen) return;
@@ -98,21 +94,12 @@ class CustomUI extends Module
 
     game.scoreText.visible = false;
 
-    rankSprite = FunkinSprite.create(1010, uiY = game.scoreText.y - 57, "p-rank");
+    //who wasted using image instead spritesheet -afeefflox
+    rankSprite = FunkinSprite.createSparrow(920,  (Preferences.downscroll) ? uiY - 100 : uiY - 150, "rankIndicators");
     rankSprite.cameras = [game.camHUD];
-    rankSprite.setGraphicSize(Std.int(rankSprite.width * 0.5));
-    rankSprite.updateHitbox();
-    rankSprite.visible = false;
+    for(ranky in ['PERFECT-GOLD', 'PERFECT', 'EXCELLENT', 'GREAT', 'GOOD', 'LOSE'])
+      rankSprite.animation.addByPrefix(ranky, "rankIndicator " + ranky, 24, true);
     game.add(rankSprite);
-
-    rankPrefectSprite = FunkinSprite.createSparrow(966, rankSprite.y - 90, "p-rank-gold");
-    rankPrefectSprite.animation.addByPrefix('gold', 'p-rank-gold', 24, true);
-    rankPrefectSprite.animation.play('gold', true);
-    rankPrefectSprite.cameras = [game.camHUD];
-    rankPrefectSprite.setGraphicSize(Std.int(rankPrefectSprite.width * 0.8));
-    rankPrefectSprite.updateHitbox();
-    rankPrefectSprite.visible = true;
-    game.add(rankPrefectSprite);
 
     recalculateRating();
   }
@@ -120,14 +107,9 @@ class CustomUI extends Module
   function onUpdate(event)
   {
     super.onUpdate(event);
-
-    if (PlayState.instance == null) 
-    {
-      scuffs = 0;
-      return;
-    }
-
     updateScoreText();
+
+    if (PlayState.instance == null) return;
     var game = PlayState.instance;
 
     debugControl(event.elapsed);
@@ -149,7 +131,7 @@ class CustomUI extends Module
     if (game.isBotPlayMode) return;
 
     scoreTxt.scriptCall("displayText", [Std.string(game.songScore), true]);
-    missedText.scriptCall("displayText", [Std.string(scuffs), false]);
+    missedText.scriptCall("displayText", [Std.string(Highscore.tallies.missed), false]);
   }
 
   function debugControl(elapsed:Float)
@@ -202,33 +184,28 @@ class CustomUI extends Module
     var isSFC = scoreData.good + scoreData.bad + scoreData.shit + scoreData.missed == 0;
 
     if (isSFC)
-    {
-      rankPrefectSprite.visible = true;
-      rankSprite.visible = false;
-    }
+      rankSprite.animation.play('PERFECT-GOLD', false, false, 0);
     else
     {
-      rankSprite.visible = true;
-      rankPrefectSprite.visible = false;
       if (grade == Constants.RANK_PERFECT_THRESHOLD)
       {
-        rankSprite.loadTexture('p-rank');
+        rankSprite.animation.play('PERFECT', false, false, 0);
       }
       else if (grade >= Constants.RANK_EXCELLENT_THRESHOLD)
       {
-        rankSprite.loadTexture('e-rank');
+        rankSprite.animation.play('EXCELLENT', false, false, 0);
       }
       else if (grade >= Constants.RANK_GREAT_THRESHOLD)
       {
-        rankSprite.loadTexture('g-rank');
+        rankSprite.animation.play('GREAT', false, false, 0);
       }
       else if (grade >= Constants.RANK_GOOD_THRESHOLD)
       {
-        rankSprite.loadTexture('g-rank');
+        rankSprite.animation.play('GOOD', false, false, 0);
       }
       else
       {
-        rankSprite.loadTexture('l-rank');
+        rankSprite.animation.play('LOSE', false, false, 0);
       }
     }
   }
@@ -236,24 +213,18 @@ class CustomUI extends Module
   override function onNoteHit(event:HitNoteScriptEvent)
   {
     super.onNoteHit(event);
-    if (PlayState.instance == null) 
-      return;
-
+    if (PlayState.instance == null) return;
     var game = PlayState.instance;
-    if (game.isPracticeMode && game.isBotPlayMode) 
-      return;
-    
-    if (event.isComboBreak)
-      scuffs++;
 
-    recalculateRating();
+    if (game.isPracticeMode && game.isBotPlayMode) return;
+    new FlxTimer().start(0.01, (_) -> recalculateRating());
   }
 
   override function onNoteMiss(event:NoteScriptEvent)
   {
+    new FlxTimer().start(0.01, (_) -> recalculateRating());
+    // Ensure, that the current note is counted too...
     super.onNoteMiss(event);
-    scuffs++;
-    recalculateRating();
   }
 
   override function onStateChangeBegin(event:StateChangeScriptEvent)
