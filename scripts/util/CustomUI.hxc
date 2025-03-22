@@ -253,8 +253,6 @@ class CustomUI extends Module
   override function onSongRetry(event:ScriptEvent)
   {
     super.onSongRetry(event);
-    rankPrefectSprite.visible = true;
-    rankSprite.visible = false;
     allowUIRegen = false;
   }
 }
