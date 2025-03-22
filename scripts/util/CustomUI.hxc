@@ -99,10 +99,13 @@ class CustomUI extends Module
     game.scoreText.visible = false;
 
     //who wasted using image instead spritesheet -afeefflox
-    rankSprite = FunkinSprite.createSparrow(920,  (Preferences.downscroll) ? uiY - 100 : uiY - 150, "rankIndicators");
+    rankSprite = FunkinSprite.createSparrow(900, game.scoreText.y - 120, "rankIndicators");
+    rankSprite.centerOrigin();
+    rankSprite.scale.set(0.7, 0.7);
     rankSprite.cameras = [game.camHUD];
-    for(ranky in ['PERFECT-GOLD', 'PERFECT', 'EXCELLENT', 'GREAT', 'GOOD', 'LOSE'])
+    for(ranky in ['GOLD PERFECT', 'PERFECT', 'EXCELLENT', 'GREAT', 'GOOD', 'LOSE'])
       rankSprite.animation.addByPrefix(ranky, "rankIndicator " + ranky, 24, true);
+    rankSprite.animation.play("GOLD PERFECT", true);
     game.add(rankSprite);
 
     recalculateRating();
@@ -190,11 +193,11 @@ class CustomUI extends Module
     var allNotesSoFar = (scoreData.totalNotesHit + scoreData.missed);
     var grade = (scoreData.sick + scoreData.good) / allNotesSoFar;
     // trace(scoreData.sick + " + " + scoreData.good + " / " + scoreData.totalNotesHit + " + " + scoreData.missed + " = " + grade);
-    var isSFC = scoreData.good + scoreData.bad + scoreData.shit + scoreData.missed == 0;
+    var isSFC = scoreData.good + scoreData.bad + scoreData.shit + scoreData.missed == 0 || allNotesSoFar == 0;
 
     if (isSFC)
     {
-      rankSprite.animation.play('PERFECT-GOLD', false, false, 0);
+      rankSprite.animation.play('GOLD PERFECT', false, false, 0);
     }
     else
     {
