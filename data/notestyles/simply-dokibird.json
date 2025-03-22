@@ -51,7 +51,7 @@
     "holdNoteCover": {
       "assetPath": "",
       "data": {
-        "enabled": true
+        "enabled": false
       }
     },
     "countdownThree": {

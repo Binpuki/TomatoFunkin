@@ -1,0 +1,45 @@
+{
+  "version": "1.0.3",
+  "name": "Tomato Flipnote",
+  "props": [  ],
+  "characters": {
+    "bf": {
+      "cameraOffsets": [
+        -313,
+        0
+      ],
+      "position": [
+        991,
+        885
+      ],
+      "scale": 1,
+      "zIndex": 300
+    },
+    "dad": {
+      "cameraOffsets": [
+        344,
+        -27
+      ],
+      "position": [
+        333,
+        885
+      ],
+      "scale": 1,
+      "zIndex": 200
+    },
+    "gf": {
+      "cameraOffsets": [
+        13,
+        53
+      ],
+      "position": [
+        699.65,
+        785.8
+      ],
+      "scale": 1.1,
+      "zIndex": 100
+    }
+  },
+  "cameraZoom": 1,
+  "directory": "shared"
+}

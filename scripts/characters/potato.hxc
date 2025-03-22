@@ -1,0 +1,29 @@
+import funkin.play.character.PackerCharacter;
+import funkin.play.character.CharacterType;
+
+class PotatoCharacter extends PackerCharacter 
+{
+    var curIndex:Int = 0;
+
+	function new() 
+    {
+		super('potato');
+    }
+
+    override function onUpdate(event)
+    {
+        super.onUpdate(event);
+
+        if (animation.curAnim == null)
+            return;
+
+        animation.curAnim.curFrame = curIndex;
+    }
+
+    override function onStepHit(event:SongTimeScriptEvent)
+    {
+        super.onStepHit(event);
+
+        curIndex = event.step % 3;
+    }
+}
