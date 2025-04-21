@@ -136,9 +136,6 @@ class SimplyDokiModule extends Module
             var playerHoldContainer = playerBarLine.holdNotes;
             playerBarLine.remove(playerHoldContainer);
             playerBarLine.insert(0, playerHoldContainer);
-
-            playerSplashes = playerBarLine.noteSplashes;
-            //playerHoldCovers = playerBarLine.noteHoldCovers;
         }
         
         if (actOnOpponent)
@@ -149,8 +146,6 @@ class SimplyDokiModule extends Module
             var oppHoldContainer = opponentBarLine.holdNotes;
             opponentBarLine.remove(oppHoldContainer);
             opponentBarLine.insert(0, oppHoldContainer);
-
-            //opponentHoldCovers = opponentBarLine.noteHoldCovers;
         }
     }
 
@@ -161,27 +156,6 @@ class SimplyDokiModule extends Module
         var game = PlayState.instance;
         if (game == null)
             return;
-
-        if (actOnPlayer)
-        {
-            if (playerSplashes != null)
-                for (member in playerSplashes.members)
-                    updateSplash(member);
-    
-            /*
-            if (playerHoldCovers != null)
-                for (member in playerHoldCovers.members)
-                    updateHoldCover(member);*/
-        }
-        
-        /*
-        if (actOnOpponent)
-        {
-            if (opponentHoldCovers != null)
-                for (member in opponentHoldCovers.members)
-                    updateHoldCover(member);
-        }
-            */
     }
 
     override function onStepHit(event:SongTimeScriptEvent) 

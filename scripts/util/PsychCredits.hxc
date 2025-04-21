@@ -12,6 +12,7 @@ import flixel.tweens.FlxEase;
 import flixel.addons.display.FlxBackdrop;
 import funkin.util.WindowUtil;
 import funkin.audio.FunkinSound;
+import hxvlc.flixel.FlxVideoSprite;
 
 import StringTools;
 class PsychCredits extends ScriptedMusicBeatState
@@ -24,10 +25,12 @@ class PsychCredits extends ScriptedMusicBeatState
 	var descText:FlxText;
     var descBox:ScriptedFunkinSprite;
     var offsetThing:Float = -75;
-
+    //shitpostVideo
+    var flxVideo:FlxVideoSprite;
+    var playedVideo:Bool = false;
     //Name - Icon name - Description - Link
     var defaultList:Array<Array<String>> = [
-        ["Placeholder Mod Credits"],
+        ["Tomato Funkin' Credits"],
         ["johfydrawsstuff", "johfy", "Director, Artist, Animator, Charter", "https://twitter.com/johfydrawsstuff"],
         ["EthanX", "ethan-the-sonic", "Composer", "https://twitter.com/hedgehog_ethan"],
         ["Afeefflox", "afeefflox", "Kagami my beloved (he's one of the programmers)", "https://twitter.com/afeefflox_lol"],
@@ -112,6 +115,16 @@ class PsychCredits extends ScriptedMusicBeatState
         descText.scrollFactor.set();
         descBox.scriptSet('sprTracker', descText);
         add(descText);            
+        
+        flxVideo = new FlxVideoSprite();
+        flxVideo.load('mods/Tomato Funkin DEMO/videos/mintoWorst.mp4');
+        flxVideo.bitmap.onFormatSetup.add(() -> {
+            flxVideo.setGraphicSize(FlxG.width, FlxG.height);
+            flxVideo.updateHitbox();
+            flxVideo.x = 0;
+            flxVideo.y = 0;
+        });
+        add(flxVideo);
 
         changeSelection();
     }
@@ -159,13 +172,36 @@ class PsychCredits extends ScriptedMusicBeatState
 
         if(controls.ACCEPT) 
         {
-            if(creditsStuff[curSelected][1] == 'afeefflox') //Kagami Asmr lol
-                openSubState(ScriptedMusicBeatSubState.init('StickerSubState', 'kagami'));
-            else if(creditsStuff[curSelected][3] == null || creditsStuff[curSelected][3].length > 4)
-                WindowUtil.openURL(creditsStuff[curSelected][3]);
-
             FunkinSound.playOnce(Paths.sound('confirmMenu'));
-            
+
+            switch(creditsStuff[curSelected][1])
+            {
+                case 'afeefflox':
+                    openSubState(ScriptedMusicBeatSubState.init('StickerSubState', 'kagami'));
+                case 'minto':
+                    if(!playedVideo)
+                    {
+                        FlxG.sound.music.fadeOut(1, 0, () -> {
+                            FlxG.sound.music.pause();
+                        });
+                        flxVideo.visible = true;
+                        flxVideo.play();
+                        flxVideo.bitmap.onEndReached.add(() -> {
+                            WindowUtil.openURL(creditsStuff[curSelected][3]);
+                            flxVideo.destroy();
+                            flxVideo.visible = false;
+                            FlxG.sound.music.play();
+                            FlxG.sound.music.fadeIn(1, 0, 0.8);
+                            playedVideo = true;
+                        });
+                    }
+                    else //FlxVideo hate me that you can't replay video again :( -Afeefflox
+                    {
+                        WindowUtil.openURL(creditsStuff[curSelected][3]);
+                    }
+                default:
+                    WindowUtil.openURL(creditsStuff[curSelected][3]);
+            }
         }
 
         if (controls.BACK)

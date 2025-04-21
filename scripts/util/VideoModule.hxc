@@ -2,7 +2,7 @@ import funkin.play.PlayState;
 import funkin.modding.module.Module;
 import funkin.modding.events.ScriptEvent;
 import funkin.play.cutscene.VideoCutscene;
-import hxcodec.flixel.FlxVideoSprite;
+import hxvlc.flixel.FlxVideoSprite;
 import flixel.FlxG;
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
@@ -17,10 +17,10 @@ class VideoModule extends Module {
 		super('VideoModule');
 	}
 
-  public function createVid(filePath:String, ?isCutscene:Bool = false):Void {
+  public function createVid(path:String, ?isCutscene:Bool = false):Void {
     shittyBool = isCutscene;
-    isweartogod = filePath;
     vidEvent = new FlxVideoSprite(0, 0);
+    vidEvent.load(path);
     if (vidEvent == null){
       trace('ALERT: The video is null! :(');
       return;
@@ -39,9 +39,7 @@ class VideoModule extends Module {
         PlayState.instance.currentStage.remove(vidEvent);
         PlayState.instance.currentStage.refresh();
     }, true);
-
-    vidEvent.autoPause = false;
-    vidEvent.bitmap.onTextureSetup.add(() -> {
+    vidEvent.bitmap.onFormatSetup.add(() -> {
         vidEvent.setGraphicSize(FlxG.width, FlxG.height);
         vidEvent.updateHitbox();
         vidEvent.x = 0;
@@ -60,7 +58,7 @@ class VideoModule extends Module {
                 vidEvent.cameras = [PlayState.instance.camCutscene];
                 PlayState.instance.camHUD.visible = false;
                 PlayState.instance.camCutscene.visible = true;
-                vidEvent.play(isweartogod);
+                vidEvent.play();
                 VideoCutscene.onVideoStarted.dispatch();
             }
         });
@@ -68,7 +66,7 @@ class VideoModule extends Module {
     else
     {
         vidEvent.cameras = [PlayState.instance.camHUD];
-        vidEvent.play(isweartogod);
+        vidEvent.play();
         VideoCutscene.onVideoStarted.dispatch();
     }
   }

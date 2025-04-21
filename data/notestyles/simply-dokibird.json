@@ -38,20 +38,62 @@
       }
     },
     "holdNote": {
-      "assetPath": "simply-doki-holds",
+      "assetPath": "shared:simply-doki-holds",
       "scale": 0.7,
       "data": {}
     },
     "noteSplash": {
-      "assetPath": "",
+      "assetPath": "shared:simply-doki-splashes",
+      "alpha": 0.8,
       "data": {
-        "enabled": true
+        "enabled": true,
+        "leftSplashes": [
+          { "prefix": "splashLeft1" },
+          { "prefix": "splashLeft2" }
+        ],
+        "rightSplashes": [
+          { "prefix": "splashRight1" },
+          { "prefix": "splashRight2" }
+        ],
+        "upSplashes": [
+          { "prefix": "splashUp1" },
+          { "prefix": "splashUp2" }
+        ],
+        "downSplashes": [
+          { "prefix": "splashDown1" },
+          { "prefix": "splashDown2" }
+        ]
       }
     },
     "holdNoteCover": {
       "assetPath": "",
+      "offsets": [80, 120],
       "data": {
-        "enabled": false
+        "enabled": true,
+        "left": {
+          "assetPath": "shared:simply-doki-suscovers",
+          "start": { "prefix": "holdCoverStartPurple" },
+          "hold": { "prefix": "holdCoverPurple" },
+          "end": { "prefix": "holdCoverEndPurple" }
+        },
+        "right": {
+          "assetPath": "shared:simply-doki-suscovers",
+          "start": { "prefix": "holdCoverStartRed" },
+          "hold": { "prefix": "holdCoverRed" },
+          "end": { "prefix": "holdCoverEndRed" }
+        },
+        "up": {
+          "assetPath": "shared:simply-doki-suscovers",
+          "start": { "prefix": "holdCoverStartGreen" },
+          "hold": { "prefix": "holdCoverGreen" },
+          "end": { "prefix": "holdCoverEndGreen" }
+        },
+        "down": {
+          "assetPath": "shared:simply-doki-suscovers",
+          "start": { "prefix": "holdCoverStartBlue" },
+          "hold": { "prefix": "holdCoverBlue" },
+          "end": { "prefix": "holdCoverEndBlue" }
+        }
       }
     },
     "countdownThree": {
