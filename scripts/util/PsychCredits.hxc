@@ -177,7 +177,7 @@ class PsychCredits extends ScriptedMusicBeatState
             switch(creditsStuff[curSelected][1])
             {
                 case 'afeefflox':
-                    openSubState(ScriptedMusicBeatSubState.init('StickerSubState', 'kagami'));
+                    openSubState(ScriptedMusicBeatSubState.init('StickerSubStateCredit', 'kagami'));
                 case 'minto':
                     if(!playedVideo)
                     {

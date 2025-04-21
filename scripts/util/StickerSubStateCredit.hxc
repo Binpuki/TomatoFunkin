@@ -1,0 +1,172 @@
+import funkin.modding.base.ScriptedMusicBeatSubState;
+import StringTools;
+import flixel.group.FlxTypedSpriteGroup;
+import flixel.FlxG;
+import funkin.ui.transition.StickerInfo;
+import funkin.ui.transition.StickerSprite;
+import haxe.ds.StringMap;
+import flixel.util.FlxTimer;
+import flixel.math.FlxMath;
+import funkin.audio.FunkinSound;
+import funkin.graphics.FunkinSprite;
+import flixel.util.FlxSort;
+import funkin.util.tools.IteratorTools;
+import funkin.util.WindowUtil;
+
+class StickerSubStateCredit extends ScriptedMusicBeatSubState
+{
+    public var grpStickers:FlxTypedSpriteGroup;
+    public var link:String = 'https://twitter.com/afeefflox_lol';
+
+    var soundSelections:Array<String> = [];
+    // what "folder" was randomly selected
+    var soundSelection:String = "";
+    var sounds:Array<String> = [];
+    var stickerName:String = '';
+    var stickers:StringMap;
+    public function new(stickerName:String)
+    {
+        super();
+        stickers = new StringMap();
+        this.stickerName = stickerName;
+
+        grpStickers = new FlxTypedSpriteGroup();
+        add(grpStickers);
+
+        grpStickers.cameras = FlxG.cameras.list;
+
+        regenStickers();
+
+        var stickerInfo:StickerInfo = new StickerInfo(stickerName);
+    }
+
+    function regenStickers():Void
+    {
+        if (grpStickers.members.length > 0)
+            grpStickers.clear();
+
+        var stickerInfo:StickerInfo = new StickerInfo(stickerName);
+        
+        for (stickerSets in stickerInfo.getPack("all"))
+        {
+            stickers.set(stickerSets, stickerInfo.getStickers(stickerSets));
+            trace(stickers);
+        }
+
+        var xPos:Float = -100;
+        var yPos:Float = -100;
+        while (xPos <= FlxG.width)
+        {
+            var stickerSet:String = getObject(IteratorTools.array(stickers.keys()));
+            var sticker:String = getObject(stickers.get(stickerSet));
+            var sticky:StickerSprite = new StickerSprite(0, 0, stickerInfo.name, sticker);
+            sticky.visible = false;
+          
+            sticky.x = xPos;
+            sticky.y = yPos;
+            xPos += sticky.frameWidth * 0.5;
+    
+            if (xPos >= FlxG.width)
+            {
+                if (yPos <= FlxG.height)
+                {
+                    xPos = -100;
+                    yPos += FlxG.random.float(70, 120);
+                }
+            }
+              
+            sticky.angle = FlxG.random.int(-60, 70);
+            grpStickers.add(sticky);
+        }
+        shuffle(grpStickers.members);
+
+        for (i in 0...grpStickers.length)
+        {
+            var sticker = grpStickers.members[i];
+            sticker.timing = FlxMath.remapToRange(i, 0, grpStickers.length, 0, 0.9);
+
+            new FlxTimer().start(sticker.timing, _ -> {
+                if (grpStickers == null) return;
+
+                sticker.visible = true;
+                FunkinSound.playOnce(Paths.soundRandom('kagami/Kagami_sfx - Marker #', 1, 19));
+
+                var frameTimer:Int = FlxG.random.int(0, 2);
+
+                // always make the last one POP
+                if (i == grpStickers.members.length - 1) frameTimer = 2;
+
+                new FlxTimer().start((1 / 24) * frameTimer, _ -> {
+                    if (sticker == null) return;
+
+                    sticker.scale.x = sticker.scale.y = FlxG.random.float(0.97, 1.02);
+          
+                    if (i == grpStickers.members.length - 1)
+                    {
+                        WindowUtil.openURL(link);
+                        FunkinSound.stopAllAudio();
+
+                        FunkinSprite.preparePurgeCache();
+                        FunkinSprite.purgeCache();
+
+                        
+                        close(); //srs it fucking annoying
+                    }
+                });
+            });
+        }
+
+        grpStickers.sort((ord, a, b) -> {
+            return FlxSort.byValues(ord, a.timing, b.timing);
+        });
+      
+        // centers the very last sticker
+        var lastOne:StickerSprite = grpStickers.members[grpStickers.members.length - 1];
+        lastOne.updateHitbox();
+        lastOne.angle = 0;
+        lastOne.screenCenter();
+    }
+
+    //Hscript don't work with generic related shit
+    function getObject(Objects:Array<Dynamic>, StartIndex:Int = 0, ?EndIndex:Null<Int>):Dynamic
+    {
+        var selected:Dynamic = null;
+        var _arrayFloatHelper:Array<Float> = null;
+		if (Objects.length != 0)
+        {
+            var WeightsArray:Array<Float> = [for (i in 0...Objects.length) 1];
+
+            if (EndIndex == null) EndIndex = Objects.length - 1;
+               
+    
+            StartIndex = Std.int(FlxMath.bound(StartIndex, 0, Objects.length - 1));
+            EndIndex = Std.int(FlxMath.bound(EndIndex, 0, Objects.length - 1));
+
+            if (EndIndex < StartIndex)
+			{
+				StartIndex = StartIndex + EndIndex;
+				EndIndex = StartIndex - EndIndex;
+				StartIndex = StartIndex - EndIndex;
+			}
+
+			if (EndIndex > WeightsArray.length - 1) EndIndex = WeightsArray.length - 1;
+
+            _arrayFloatHelper = [for (i in StartIndex...EndIndex + 1) WeightsArray[i]];
+			selected = Objects[StartIndex + FlxG.random.weightedPick(_arrayFloatHelper)];
+        }
+
+        return selected;
+    }
+
+    function shuffle(array:Array<Dynamic>)
+    {
+        var maxValidIndex = array.length - 1;
+		for (i in 0...maxValidIndex)
+		{
+			var j = FlxG.random.int(i, maxValidIndex);
+			var tmp = array[i];
+			array[i] = array[j];
+			array[j] = tmp;
+		}
+    }
+}
