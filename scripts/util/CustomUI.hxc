@@ -54,7 +54,7 @@ class CustomUI extends Module
     if (!Preferences.upscroll) uiY = game.scoreText.y - 7;
 
     scoreSprite = FunkinSprite.create(401, uiY, "scorecounter");
-    scoreSprite.zIndex = 1000;
+    scoreSprite.zIndex = 900;
     scoreSprite.cameras = [game.camHUD];
     scoreSprite.setGraphicSize(Std.int(scoreSprite.width * 0.5));
     scoreSprite.updateHitbox();
@@ -63,7 +63,7 @@ class CustomUI extends Module
     missedSprite = FunkinSprite.create(720, uiY, "combobreakcounter");
 
     missedSprite.cameras = [game.camHUD];
-    missedSprite.zIndex = 1000;
+    missedSprite.zIndex = 900;
     missedSprite.setGraphicSize(Std.int(missedSprite.width * 0.5));
     missedSprite.updateHitbox();
     game.add(missedSprite);
@@ -72,7 +72,7 @@ class CustomUI extends Module
     missedText.x = 871;
     missedText.y = uiY;
     missedText.scrollFactor.set();
-    missedText.zIndex = 1000;
+    missedText.zIndex = 900;
     missedText.cameras = [game.camHUD];
     game.add(missedText);
 
@@ -80,7 +80,7 @@ class CustomUI extends Module
     scoreTxt.x = 548;
     scoreTxt.y = uiY;
     scoreTxt.scrollFactor.set();
-    scoreTxt.zIndex = 1000;
+    scoreTxt.zIndex = 900;
     scoreTxt.cameras = [game.camHUD];
     game.add(scoreTxt);
 
