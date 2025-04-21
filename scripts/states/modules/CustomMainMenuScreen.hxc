@@ -1,17 +1,14 @@
-
-
-import flixel.FlxSprite;
 import funkin.audio.FunkinSound;
 import flixel.util.FlxTimer;
 import funkin.play.PauseSubState;
 import funkin.play.PlayStatePlaylist;
 import flixel.addons.transition.FlxTransitionableState;
 import funkin.play.PlayState;
-import funkin.modding.events.ScriptEvent;
 import funkin.ui.freeplay.FreeplayState;
 import funkin.modding.module.Module;
 import funkin.modding.base.ScriptedMusicBeatState;
 import funkin.ui.mainmenu.MainMenuState;
+import funkin.ui.transition.StickerSubState;
 import flixel.FlxG;
 
 class CustomMainMenuScreen extends Module
@@ -29,7 +26,7 @@ class CustomMainMenuScreen extends Module
     super("custom-menu-mod");
   }
 
-  override function onCreate(event:ScriptEvent)
+  override function onCreate(event)
   {
     PauseSubState.PAUSE_MENU_ENTRIES_STANDARD[4].callback = onPlayStateExit;
     super.onCreate(event);
@@ -44,29 +41,23 @@ class CustomMainMenuScreen extends Module
     FlxTransitionableState.skipNextTransIn = true;
     FlxTransitionableState.skipNextTransOut = true;
 
-    if (PlayStatePlaylist.isStoryMode)
-    {
-      PlayStatePlaylist.reset();
-      state.openSubState(new funkin.ui.transition.StickerSubState(null, (sticker) -> new funkin.ui.story.StoryMenuState(sticker)));
-    }
-    else
-    {
-      state.openSubState(new funkin.ui.transition.StickerSubState(null, (sticker) -> {
-        //      if (FlxG.save.data.useNewMenu)
-        //     {
-        var st = ScriptedMusicBeatState.init("CustomMainMenu");
-        st.scriptSet("freeplay", new FreeplayState(null, sticker));
-        st.persistentUpdate = false;
-        st.persistentDraw = true;
-        return st;
-        // }
-        // else
-        //   return FreeplayState.build(null, sticker);
-      }));
-    }
+    var targetState = (PlayStatePlaylist.isStoryMode) ? (sticker) -> new StoryMenuState(sticker) : (sticker) -> build(sticker);
+
+    if (PlayStatePlaylist.isStoryMode) PlayStatePlaylist.reset();
+
+    state.openSubState(new StickerSubState({targetState: targetState}));
   }
 
-  override function onStateChangeEnd(event:StateChangeScriptEvent)
+  function build(sticker:StickerSubState)
+  {
+    var st = ScriptedMusicBeatState.init("CustomMainMenu");
+    st.scriptSet("freeplay", new FreeplayState(null, sticker));
+    st.persistentUpdate = false;
+    st.persistentDraw = true;
+    return st;
+  }
+
+  override function onStateChangeEnd(event)
   {
     if (Std.isOfType(event.targetState, MainMenuState))
     {
@@ -82,14 +73,14 @@ class CustomMainMenuScreen extends Module
     super.onStateChangeEnd(event);
   }
 
-  override function onSubStateOpenEnd(event:SubStateScriptEvent)
+  override function onSubStateOpenEnd(event)
   {
     if (Std.isOfType(event.targetState, FreeplayState)) freePlay = event.targetState;
     super.onSubStateOpenEnd(event);
   }
 
   //* This replaces freeplay's closing routine
-  override function onUpdate(event:UpdateScriptEvent)
+  override function onUpdate(event)
   {
     super.onUpdate(event);
     if (freePlay == null || !freePlay.active) return;
