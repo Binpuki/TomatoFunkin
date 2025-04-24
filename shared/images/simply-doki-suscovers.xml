@@ -1,58 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-Created with Free texture packer v0.6.7 http://free-tex-packer.com
--->
-<TextureAtlas imagePath="simply-doki-suscovers.png" width="577" height="548">
-  <SubTexture name="holdCoverEndPurple0006" x="0" y="0"  width="222" height="122" frameX="-0" frameY="-12" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndBlue0006" x="0" y="122"  width="222" height="122" frameX="-0" frameY="-12" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndPurple0004" x="222" y="0" width="117" height="211" rotated="true"  frameX="-5" frameY="-12" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndBlue0004" x="0" y="244"  width="211" height="117" frameX="-5" frameY="-12" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndPurple0008" x="222" y="211"  width="164" height="125" frameX="-27" frameY="-1" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndBlue0008" x="339" y="0" width="125" height="164" rotated="true"  frameX="-27" frameY="-1" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverStartBlue" x="211" y="336"  width="162" height="115" frameX="-1" frameY="-1" frameWidth="169" frameHeight="122"/>
-  <SubTexture name="holdCoverEndPurple0007" x="0" y="361"  width="146" height="114" frameX="-41" frameY="-9" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndBlue0007" x="373" y="336"  width="146" height="114" frameX="-41" frameY="-9" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndPurple0003" x="386" y="164"  width="180" height="89" frameX="-18" frameY="-25" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndBlue0003" x="373" y="450"  width="180" height="89" frameX="-18" frameY="-25" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndBlue0001" x="386" y="253"  width="161" height="71" frameX="-26" frameY="-20" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndPurple0001" x="464" y="0" width="71" height="161" rotated="true"  frameX="-26" frameY="-20" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverPurple0001" x="146" y="361" width="64" height="95" rotated="true"  frameX="-1" frameY="-0" frameWidth="101" frameHeight="68"/>
-  <SubTexture name="holdCoverBlue0001" x="210" y="451"  width="95" height="64" frameX="-1" frameY="-0" frameWidth="101" frameHeight="68"/>
-  <SubTexture name="holdCoverBlue0002" x="146" y="456" width="58" height="92" rotated="true"  frameX="-3" frameY="-2" frameWidth="101" frameHeight="68"/>
-  <SubTexture name="holdCoverPurple0002" x="519" y="324" width="58" height="92" rotated="true"  frameX="-3" frameY="-2" frameWidth="101" frameHeight="68"/>
-  <SubTexture name="holdCoverBlue0003" x="305" y="451" width="57" height="92" rotated="true"  frameX="-2" frameY="-6" frameWidth="101" frameHeight="68"/>
-  <SubTexture name="holdCoverPurple0003" x="0" y="475"  width="92" height="57" frameX="-2" frameY="-6" frameWidth="101" frameHeight="68"/>
-  <SubTexture name="holdCoverRed0001" x="210" y="451"  width="95" height="64" frameX="-1" frameY="-0" frameWidth="101" frameHeight="68"/>
-  <SubTexture name="holdCoverRed0002" x="146" y="456" width="58" height="92" rotated="true"  frameX="-3" frameY="-2" frameWidth="101" frameHeight="68"/>
-  <SubTexture name="holdCoverRed0003" x="305" y="451" width="57" height="92" rotated="true"  frameX="-2" frameY="-6" frameWidth="101" frameHeight="68"/>
-  <SubTexture name="holdCoverEndBlue0002" x="386" y="253"  width="161" height="71" frameX="-26" frameY="-20" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndRed0001" x="386" y="253"  width="161" height="71" frameX="-26" frameY="-20" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndRed0002" x="386" y="253"  width="161" height="71" frameX="-26" frameY="-20" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndRed0003" x="373" y="450"  width="180" height="89" frameX="-18" frameY="-25" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndBlue0005" x="0" y="244"  width="211" height="117" frameX="-5" frameY="-12" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndRed0004" x="0" y="244"  width="211" height="117" frameX="-5" frameY="-12" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndRed0005" x="0" y="244"  width="211" height="117" frameX="-5" frameY="-12" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndRed0006" x="0" y="122"  width="222" height="122" frameX="-0" frameY="-12" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndRed0007" x="373" y="336"  width="146" height="114" frameX="-41" frameY="-9" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndBlue0009" x="339" y="0" width="125" height="164" rotated="true"  frameX="-27" frameY="-1" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndRed0008" x="339" y="0" width="125" height="164" rotated="true"  frameX="-27" frameY="-1" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndRed0009" x="339" y="0" width="125" height="164" rotated="true"  frameX="-27" frameY="-1" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndPurple0002" x="464" y="0" width="71" height="161" rotated="true"  frameX="-26" frameY="-20" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndGreen0001" x="464" y="0" width="71" height="161" rotated="true"  frameX="-26" frameY="-20" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndGreen0002" x="464" y="0" width="71" height="161" rotated="true"  frameX="-26" frameY="-20" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndGreen0003" x="386" y="164"  width="180" height="89" frameX="-18" frameY="-25" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndPurple0005" x="222" y="0" width="117" height="211" rotated="true"  frameX="-5" frameY="-12" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndGreen0004" x="222" y="0" width="117" height="211" rotated="true"  frameX="-5" frameY="-12" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndGreen0005" x="222" y="0" width="117" height="211" rotated="true"  frameX="-5" frameY="-12" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndGreen0006" x="0" y="0"  width="222" height="122" frameX="-0" frameY="-12" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndGreen0007" x="0" y="361"  width="146" height="114" frameX="-41" frameY="-9" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndPurple0009" x="222" y="211"  width="164" height="125" frameX="-27" frameY="-1" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndGreen0008" x="222" y="211"  width="164" height="125" frameX="-27" frameY="-1" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverEndGreen0009" x="222" y="211"  width="164" height="125" frameX="-27" frameY="-1" frameWidth="226" frameHeight="138"/>
-  <SubTexture name="holdCoverGreen0001" x="146" y="361" width="64" height="95" rotated="true"  frameX="-1" frameY="-0" frameWidth="101" frameHeight="68"/>
-  <SubTexture name="holdCoverGreen0002" x="519" y="324" width="58" height="92" rotated="true"  frameX="-3" frameY="-2" frameWidth="101" frameHeight="68"/>
-  <SubTexture name="holdCoverGreen0003" x="0" y="475"  width="92" height="57" frameX="-2" frameY="-6" frameWidth="101" frameHeight="68"/>
-  <SubTexture name="holdCoverStartPurple" x="211" y="336"  width="162" height="115" frameX="-1" frameY="-1" frameWidth="169" frameHeight="122"/>
-  <SubTexture name="holdCoverStartRed" x="211" y="336"  width="162" height="115" frameX="-1" frameY="-1" frameWidth="169" frameHeight="122"/>
-  <SubTexture name="holdCoverStartGreen" x="211" y="336"  width="162" height="115" frameX="-1" frameY="-1" frameWidth="169" frameHeight="122"/>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="simply-doki-suscovers.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="holdCoverEndBlue0000" x="0" y="0" width="218" height="110" frameX="0" frameY="0" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndBlue0001" x="218" y="0" width="208" height="125" frameX="-12" frameY="-21" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndBlue0002" x="426" y="0" width="204" height="83" frameX="-15" frameY="-65" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndBlue0003" x="630" y="0" width="195" height="49" frameX="-22" frameY="-91" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndBlue0004" x="630" y="0" width="195" height="49" frameX="-22" frameY="-91" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndBlue0005" x="0" y="125" width="200" height="46" frameX="-18" frameY="-99" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndBlue0006" x="0" y="125" width="200" height="46" frameX="-18" frameY="-99" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndBlue0007" x="200" y="125" width="196" height="40" frameX="-19" frameY="-104" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndBlue0008" x="200" y="125" width="196" height="40" frameX="-19" frameY="-104" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndYellow0000" x="396" y="125" width="218" height="110" frameX="0" frameY="0" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndYellow0001" x="614" y="125" width="208" height="125" frameX="-12" frameY="-21" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndYellow0002" x="0" y="250" width="204" height="83" frameX="-15" frameY="-65" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndYellow0003" x="204" y="250" width="194" height="49" frameX="-22" frameY="-91" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndYellow0004" x="204" y="250" width="194" height="49" frameX="-22" frameY="-91" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndYellow0005" x="398" y="250" width="200" height="46" frameX="-18" frameY="-99" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndYellow0006" x="398" y="250" width="200" height="46" frameX="-18" frameY="-99" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndYellow0007" x="598" y="250" width="195" height="40" frameX="-19" frameY="-104" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverEndYellow0008" x="598" y="250" width="195" height="40" frameX="-19" frameY="-104" frameWidth="220" frameHeight="148"/>
+	<SubTexture name="holdCoverLoopBlue0000" x="0" y="333" width="238" height="145" frameX="-3" frameY="0" frameWidth="241" frameHeight="153"/>
+	<SubTexture name="holdCoverLoopBlue0001" x="238" y="333" width="196" height="150" frameX="-22" frameY="-2" frameWidth="241" frameHeight="153"/>
+	<SubTexture name="holdCoverLoopBlue0002" x="434" y="333" width="237" height="152" frameX="0" frameY="-1" frameWidth="241" frameHeight="153"/>
+	<SubTexture name="holdCoverLoopBlue0003" x="671" y="333" width="192" height="124" frameX="-23" frameY="-3" frameWidth="241" frameHeight="153"/>
+	<SubTexture name="holdCoverLoopYellow0000" x="0" y="485" width="238" height="145" frameX="-3" frameY="0" frameWidth="241" frameHeight="153"/>
+	<SubTexture name="holdCoverLoopYellow0001" x="238" y="485" width="196" height="150" frameX="-22" frameY="-2" frameWidth="241" frameHeight="153"/>
+	<SubTexture name="holdCoverLoopYellow0002" x="434" y="485" width="237" height="152" frameX="0" frameY="-1" frameWidth="241" frameHeight="153"/>
+	<SubTexture name="holdCoverLoopYellow0003" x="671" y="485" width="192" height="124" frameX="-23" frameY="-3" frameWidth="241" frameHeight="153"/>
+	<SubTexture name="holdCoverStartBlue0000" x="0" y="637" width="226" height="195"/>
+	<SubTexture name="holdCoverStartYellow0000" x="226" y="637" width="226" height="195"/>
 </TextureAtlas>

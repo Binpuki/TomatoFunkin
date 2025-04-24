@@ -34,13 +34,11 @@ class CustomUI extends Module
 
   var ratingPercent:Float;
   var allowUIRegen = true;
-
   var scuffs:Int = 0;
 
   override function onSongLoaded(event:SongLoadScriptEvent)
   {
     scuffs = 0;
-
     super.onSongLoaded(event);
     trace("Allow Regen: " + allowUIRegen);
     if (PlayState.instance == null || !allowUIRegen) return;
@@ -54,7 +52,7 @@ class CustomUI extends Module
     if (!Preferences.upscroll) uiY = game.scoreText.y - 7;
 
     scoreSprite = FunkinSprite.create(401, uiY, "scorecounter");
-    scoreSprite.zIndex = 900;
+    scoreSprite.zIndex = 1000;
     scoreSprite.cameras = [game.camHUD];
     scoreSprite.setGraphicSize(Std.int(scoreSprite.width * 0.5));
     scoreSprite.updateHitbox();
@@ -63,7 +61,7 @@ class CustomUI extends Module
     missedSprite = FunkinSprite.create(720, uiY, "combobreakcounter");
 
     missedSprite.cameras = [game.camHUD];
-    missedSprite.zIndex = 900;
+    missedSprite.zIndex = 1000;
     missedSprite.setGraphicSize(Std.int(missedSprite.width * 0.5));
     missedSprite.updateHitbox();
     game.add(missedSprite);
@@ -72,7 +70,7 @@ class CustomUI extends Module
     missedText.x = 871;
     missedText.y = uiY;
     missedText.scrollFactor.set();
-    missedText.zIndex = 900;
+    missedText.zIndex = 1000;
     missedText.cameras = [game.camHUD];
     game.add(missedText);
 
@@ -80,7 +78,7 @@ class CustomUI extends Module
     scoreTxt.x = 548;
     scoreTxt.y = uiY;
     scoreTxt.scrollFactor.set();
-    scoreTxt.zIndex = 900;
+    scoreTxt.zIndex = 1000;
     scoreTxt.cameras = [game.camHUD];
     game.add(scoreTxt);
 
@@ -108,6 +106,7 @@ class CustomUI extends Module
     rankSprite.animation.play("GOLD PERFECT", true);
     game.add(rankSprite);
 
+    game.refresh();
     recalculateRating();
   }
 
@@ -115,11 +114,7 @@ class CustomUI extends Module
   {
     super.onUpdate(event);
 
-    if (PlayState.instance == null) 
-    {
-      scuffs = 0;
-      return;
-    }
+    if (PlayState.instance == null) return;
 
     updateScoreText();
     var game = PlayState.instance;
@@ -133,6 +128,19 @@ class CustomUI extends Module
       botplaySine += 180 * event.elapsed;
       botplayTxt.alpha = 1 - Math.sin((Math.PI * botplaySine) / 180);
     }
+  }
+
+  function onGameOver(event:ScriptEvent)
+  {
+    scuffs = 0;
+
+    //reset tallies :troll:
+    Highscore.tallies.missed = 0;
+    Highscore.tallies.shit = 0;
+    Highscore.tallies.bad = 0;
+    Highscore.tallies.good = 0;
+    Highscore.tallies.sick = 0;
+    recalculateRating();
   }
 
   function updateScoreText():Void
@@ -234,16 +242,22 @@ class CustomUI extends Module
     if (game.isPracticeMode && game.isBotPlayMode) 
       return;
     
-    if (event.isComboBreak)
-      scuffs++;
-
+    if (event.judgement == 'miss')  scuffs += 1;
     recalculateRating();
   }
 
   override function onNoteMiss(event:NoteScriptEvent)
   {
     super.onNoteMiss(event);
-    scuffs++;
+    scuffs += 1;
+    recalculateRating();
+  }
+
+  
+  override function onNoteGhostMiss(event:GhostMissNoteScriptEvent)
+  {
+    super.onNoteGhostMiss(event);
+    scuffs += 1;
     recalculateRating();
   }
 
@@ -257,5 +271,15 @@ class CustomUI extends Module
   {
     super.onSongRetry(event);
     allowUIRegen = false;
+
+    scuffs = 0;
+
+    //reset tallies :troll:
+    Highscore.tallies.missed = 0;
+    Highscore.tallies.shit = 0;
+    Highscore.tallies.bad = 0;
+    Highscore.tallies.good = 0;
+    Highscore.tallies.sick = 0;
+    recalculateRating();
   }
 }

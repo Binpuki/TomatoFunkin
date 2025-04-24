@@ -2,16 +2,11 @@ import funkin.play.PlayState;
 import funkin.play.notes.Strumline;
 import funkin.play.notes.NoteSprite;
 import funkin.modding.module.Module;
-import funkin.play.notes.NoteSplash;
 import funkin.play.notes.NoteHoldCover;
-import flixel.graphics.frames.FlxAtlasFrames;
-import flixel.util.FlxStringUtil;
-import funkin.Paths;
+import funkin.Preferences;
 
 class SimplyDokiModule extends Module
 {
-    var NOTE_SPLASH_FRAMES:FlxAtlasFrames;
-    //var HOLD_COVER_FRAMES:FlxAtlasFrames;
 
     var NOTE_STYLE_ID:String = "simply-dokibird";
     var frameIndices:Array<Int> = [0, 4, 6, 8];
@@ -21,11 +16,11 @@ class SimplyDokiModule extends Module
 
     // Y'know, I've always wondered why Funkin' calls these "strumlines". Wtf are you strumming? - Binpuki
     var playerBarLine:Strumline;
-    var playerSplashes:FlxTypedSpriteGroup<NoteSplash>;
     var playerHoldCovers:FlxTypedSpriteGroup<NoteHoldCover>;
 
     var opponentBarLine:Strumline;
     var opponentHoldCovers:FlxTypedSpriteGroup<NoteHoldCover>;
+
 
     var curIndex:Int = 0;
 
@@ -34,12 +29,6 @@ class SimplyDokiModule extends Module
 	private function new()
 	{
 		super("SimplyDoki");
-
-        NOTE_SPLASH_FRAMES = Paths.getSparrowAtlas("simply-doki-splashes", "shared");
-        NOTE_SPLASH_FRAMES.parent.persist = true;
-
-        //HOLD_COVER_FRAMES = Paths.getSparrowAtlas("simply-doki-suscovers", "shared");
-        //HOLD_COVER_FRAMES.parent.persist = true;
 	}
 
     function updateNote(note:NoteSprite)
@@ -49,74 +38,9 @@ class SimplyDokiModule extends Module
 
         note.animation.curAnim.curFrame = frameIndices[curIndex];
     }
-
-    function updateHoldCover(holdCover:NoteHoldCover)
-    {
-        holdCover.visible = false;
-        /*
-        if (holdCover == null || holdCover.glow.frames == HOLD_COVER_FRAMES)
-            return;
-
-        var glow = holdCover.glow;
-
-        var curAnimName = "";
-        var curAnimFrame = 0;
-        if (glow.animation.name != null)
-            curAnimName = glow.animation.name;
-        if (glow.animation.curAnim != null)
-            curAnimFrame = glow.animation.curAnim.curFrame;
-
-        glow.animation.destroyAnimations();
-        glow.frames = HOLD_COVER_FRAMES;
-
-        // Copied this from NoteHoldCover LOL
-        for (direction in Strumline.DIRECTIONS)
-        {
-            var directionName = FlxStringUtil.toTitleCase(direction.colorName);
-
-            glow.animation.addByPrefix('holdCoverStart$directionName', 'holdCoverStart${directionName}0', 24, false, false, false);
-            glow.animation.addByPrefix('holdCover$directionName', 'holdCover${directionName}0', 24, true, false, false);
-            glow.animation.addByPrefix('holdCoverEnd$directionName', 'holdCoverEnd${directionName}0', 24, false, false, false);
-        }
-
-        if (curAnimName != "")
-            glow.animation.play(curAnimName, true, false, curAnimFrame);
-        */
-    }
-
-    function updateSplash(splash:NoteSplash)
-    {
-        if (splash == null || splash.frames == NOTE_SPLASH_FRAMES)
-            return;
-        
-        var curAnimName = "";
-        var curAnimFrame = 0;
-        if (splash.animation.name != null)
-            curAnimName = splash.animation.name;
-        if (splash.animation.curAnim != null)
-            curAnimFrame = splash.animation.curAnim.curFrame;
-
-        splash.animation.destroyAnimations();
-        splash.frames = NOTE_SPLASH_FRAMES;
-        
-        // Copied this from NoteSplash LOL
-        splash.animation.addByPrefix('splash1Left', 'splashLeft10', 24, false, false, false);
-        splash.animation.addByPrefix('splash1Down', 'splashDown10', 24, false, false, false);
-        splash.animation.addByPrefix('splash1Up', 'splashUp10', 24, false, false, false);
-        splash.animation.addByPrefix('splash1Right', 'splashRight10', 24, false, false, false);
-        splash.animation.addByPrefix('splash2Left', 'splashLeft20', 24, false, false, false);
-        splash.animation.addByPrefix('splash2Down', 'splashDown20', 24, false, false, false);
-        splash.animation.addByPrefix('splash2Up', 'splashUp20', 24, false, false, false);
-        splash.animation.addByPrefix('splash2Right', 'splashRight20', 24, false, false, false);
-
-        splash.scale.set(0.3, 0.3);
-        splash.y -= 10;
-        splash.x += 10;
-
-        if (curAnimName != "")
-            splash.animation.play(curAnimName, true, false, curAnimFrame);
-    }
-
+    
+    //**I wonder what to point without using refresh cuz it easier lol**/
+    
     override function onSongLoaded(event:SongLoadScriptEvent)
     {
         super.onSongLoaded(event);
@@ -131,23 +55,33 @@ class SimplyDokiModule extends Module
         if (actOnPlayer)
         {
             playerBarLine = game.playerStrumline;
-            playerBarLine.holdNotes.zIndex = 5;
+            playerBarLine.holdNotes.alpha = 0.6;
+            playerBarLine.holdNotes.zIndex = playerBarLine.strumlineNotes.zIndex - 1;
+            playerBarLine.holdNotesVwoosh.zIndex = playerBarLine.holdNotes.zIndex;
+            playerBarLine.noteHoldCovers.zIndex = playerBarLine.holdNotes.zIndex;
+            playerBarLine.refresh();
 
-            var playerHoldContainer = playerBarLine.holdNotes;
-            playerBarLine.remove(playerHoldContainer);
-            playerBarLine.insert(1, playerHoldContainer);
+            playerHoldCovers = playerBarLine.noteHoldCovers;
+
+            if(Preferences.downscroll) playerBarLine.noteStyle.getHoldCoverOffsets()[1] = -6;
+                
         }
         
         if (actOnOpponent)
         {
             opponentBarLine = game.opponentStrumline;
-            opponentBarLine.holdNotes.zIndex = 5;
+            opponentBarLine.holdNotes.alpha = 0.6;
+            opponentBarLine.holdNotes.zIndex = opponentBarLine.strumlineNotes.zIndex - 1;
+            opponentBarLine.holdNotesVwoosh.zIndex = opponentBarLine.holdNotes.zIndex;
+            opponentBarLine.noteHoldCovers.zIndex = opponentBarLine.holdNotes.zIndex;
+            opponentBarLine.refresh();
 
-            var oppHoldContainer = opponentBarLine.holdNotes;
-            opponentBarLine.remove(oppHoldContainer);
-            opponentBarLine.insert(1, oppHoldContainer);
+            opponentHoldCovers = opponentBarLine.noteHoldCovers;
+
+            if(Preferences.downscroll) opponentBarLine.noteStyle.getHoldCoverOffsets()[1] = -6;
         }
     }
+    
 
     override function onUpdate(event:UpdateScriptEvent)
     {
@@ -156,6 +90,20 @@ class SimplyDokiModule extends Module
         var game = PlayState.instance;
         if (game == null)
             return;
+
+        if (actOnPlayer)
+        {
+            if (playerHoldCovers != null)
+                for (member in playerHoldCovers.members)
+                    updateHoldCover(member);
+        }
+
+        if (actOnOpponent)
+        {
+            if (opponentHoldCovers != null)
+                for (member in opponentHoldCovers.members)
+                    updateHoldCover(member);
+        }
     }
 
     override function onStepHit(event:SongTimeScriptEvent) 
@@ -191,5 +139,14 @@ class SimplyDokiModule extends Module
     override function onNoteIncoming(event:NoteScriptEvent)
     {
         updateNote(event.note);
+    }
+
+    function updateHoldCover(holdCover:NoteHoldCover)
+    {
+        if (holdCover == null) return;
+
+        var glow = holdCover.glow;
+
+        glow.flipY = Preferences.downscroll;
     }
 }
