@@ -67,32 +67,32 @@
     },
     "holdNoteCover": {
       "assetPath": "",
-      "offsets": [80, 120],
+      "offsets": [0, 120],
       "data": {
-        "enabled": false,
+        "enabled": true,
         "left": {
           "assetPath": "shared:simply-doki-suscovers",
-          "start": { "prefix": "holdCoverStartPurple" },
-          "hold": { "prefix": "holdCoverPurple" },
-          "end": { "prefix": "holdCoverEndPurple" }
+          "start": { "prefix": "holdCoverStartBlue" },
+          "hold": { "prefix": "holdCoverLoopBlue" },
+          "end": { "prefix": "holdCoverEndBlue" }
         },
         "right": {
           "assetPath": "shared:simply-doki-suscovers",
-          "start": { "prefix": "holdCoverStartRed" },
-          "hold": { "prefix": "holdCoverRed" },
-          "end": { "prefix": "holdCoverEndRed" }
+          "start": { "prefix": "holdCoverStartYellow" },
+          "hold": { "prefix": "holdCoverLoopYellow" },
+          "end": { "prefix": "holdCoverEndYellow" }
         },
         "up": {
           "assetPath": "shared:simply-doki-suscovers",
-          "start": { "prefix": "holdCoverStartGreen" },
-          "hold": { "prefix": "holdCoverGreen" },
-          "end": { "prefix": "holdCoverEndGreen" }
+          "start": { "prefix": "holdCoverStartBlue" },
+          "hold": { "prefix": "holdCoverLoopBlue" },
+          "end": { "prefix": "holdCoverEndBlue" }
         },
         "down": {
           "assetPath": "shared:simply-doki-suscovers",
-          "start": { "prefix": "holdCoverStartBlue" },
-          "hold": { "prefix": "holdCoverBlue" },
-          "end": { "prefix": "holdCoverEndBlue" }
+          "start": { "prefix": "holdCoverStartYellow" },
+          "hold": { "prefix": "holdCoverLoopYellow" },
+          "end": { "prefix": "holdCoverEndYellow" }
         }
       }
     },
