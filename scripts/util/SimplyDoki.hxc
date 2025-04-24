@@ -135,7 +135,7 @@ class SimplyDokiModule extends Module
 
             var playerHoldContainer = playerBarLine.holdNotes;
             playerBarLine.remove(playerHoldContainer);
-            playerBarLine.insert(0, playerHoldContainer);
+            playerBarLine.insert(1, playerHoldContainer);
         }
         
         if (actOnOpponent)
@@ -145,7 +145,7 @@ class SimplyDokiModule extends Module
 
             var oppHoldContainer = opponentBarLine.holdNotes;
             opponentBarLine.remove(oppHoldContainer);
-            opponentBarLine.insert(0, oppHoldContainer);
+            opponentBarLine.insert(1, oppHoldContainer);
         }
     }
 
