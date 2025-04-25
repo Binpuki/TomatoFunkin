@@ -63,7 +63,7 @@ class SimplyDokiModule extends Module
 
             playerHoldCovers = playerBarLine.noteHoldCovers;
 
-            if(Preferences.downscroll) playerBarLine.noteStyle.getHoldCoverOffsets()[1] = -6;
+            if(Preferences.downscroll) playerBarLine.noteStyle.getHoldCoverOffsets()[1] = 50;
                 
         }
         
@@ -78,7 +78,7 @@ class SimplyDokiModule extends Module
 
             opponentHoldCovers = opponentBarLine.noteHoldCovers;
 
-            if(Preferences.downscroll) opponentBarLine.noteStyle.getHoldCoverOffsets()[1] = -6;
+            if(Preferences.downscroll) opponentBarLine.noteStyle.getHoldCoverOffsets()[1] = 50;
         }
     }
     
